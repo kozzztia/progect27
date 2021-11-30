@@ -172,7 +172,7 @@
 
 // ---------------section 3 ---------------------------
 const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('.btn2');
+// // const btn2 = document.querySelector('.btn2');
 const div = document.querySelector('.div');
 // const input1 = document.querySelector('.input1');
 // const input2 = document.querySelector('.input2');
@@ -199,15 +199,229 @@ const div = document.querySelector('.div');
 // btn1.addEventListener('click', f2);
 // task 3-------------------------------------------
 
-let f3 = function () {
-  let a = document.querySelector('.input1').value;
-  let b = document.querySelector('.input2').value;
-  if (a < b) {
-    div.innerHTML = b;
-  }
-  else {
-    div.innerHTML = a;
-  }
-}
-btn1.addEventListener('click', f3)
+// let f3 = function () {
+//   let a = document.querySelector('.input1').value;
+//   let b = document.querySelector('.input2').value;
+//   if (a < b) {
+//     div.innerHTML = b;
+//   }
+//   else {
+//     div.innerHTML = a;
+//   }
+// }
+// btn1.addEventListener('click', f3)
 
+// --------------------------------------------task4
+
+// btn1.addEventListener('click', () => {
+//   let a = document.querySelector('.input1').value;
+//   if (a < 18) {
+//     div.innerHTML = '1';
+//   }
+//   else if (a >= 18) {
+//     div.innerHTML = '0';
+//   }
+// })
+
+// -------------------------------------------task5
+
+// btn1.addEventListener('click', () => {
+//   let input5 = document.querySelector('.input1');
+//   if (input5.value < 0) {
+//     div.innerHTML = 'm';
+//   }
+//   else if (input5.value == 0) {
+//     div.innerHTML = '0';
+//   }
+//   else {
+//     div.innerHTML = '1';
+//   }
+// })
+
+// -----------------------------------------task 6
+
+// // let input6 = document.querySelector('.input1');
+// let f6 = function () {
+//   num = document.querySelector('.input1').value;
+//   // if (num % 2 == 0) {
+//   //   div.innerHTML = 'even'
+//   // }
+//   // else {
+//   //   div.innerHTML = 'odd'
+//   // }
+//   (num % 2 == 0) ? div.innerHTML = 'even' : div.innerHTML = 'odd'; //bonus  сокращенно
+// }
+
+// btn1.addEventListener('click', f6)
+
+// ----------------------------------------task7
+
+// let f7 = () => {
+//   a = document.querySelector('.input1').value;
+//   b = document.querySelector('.input2').value;
+//   // div.innerHTML = a ** b
+//   div.innerHTML = Math.pow(a, b); //--бонус через math.pow( first , second)
+// }
+// btn1.addEventListener('click', f7)
+
+// ---------------------------------------task8
+// let f8 = () => {
+//   num = +document.querySelector('.select').value;
+//   switch (num) {
+//     case 1:
+//       div.innerHTML = 'one';
+//       break;
+//     case 2:
+//       div.innerHTML = 'two';
+//       break;
+//     case 3:
+//       div.innerHTML = 'three';
+//       break;
+//     default:
+//       div.innerHTML = 'error';
+//       break;
+//   }
+// }
+// btn1.addEventListener('click', f8)
+
+// ---------------------------------------task9
+
+// let f9 = () => {
+//   num = document.querySelector('.input1').value;
+
+//   if (num >= 1 && num <= 32) {
+//     div.innerHTML = 'first'
+//   }
+//   else if (num >= 33 && num <= 43) {
+//     div.innerHTML = 'second'
+//   }
+//   else if (num >= 44 && num <= 64) {
+//     div.innerHTML = 'third'
+//   }
+//   else {
+//     div.innerHTML = "are you shore?"
+//   }
+// }
+// btn1.addEventListener('click', f9)
+
+// -------------------------------------task10
+
+// let f10 = () => {
+//   num = document.querySelector('.select').value;
+//   div.innerHTML = 'value = ' + num;
+// }
+// btn1.addEventListener('click', f10)
+
+
+// --------------------------------------task11
+
+// num = document.querySelector('.select')
+
+// input = document.querySelector('.select');
+// input.onchange = () => {
+//   num = input.value;
+//   div.innerHTML = 'value = ' + num;
+// }
+
+
+// --------------------------------------task12
+
+// btn1.addEventListener('click', () => {
+//   input1 = +document.querySelector('.input1').value;
+//   div.innerHTML = typeof (input1);
+// })
+
+//  -------------------------------------task13
+
+// btn1.addEventListener('click', () => {
+//   input1 = document.querySelector('.input1').value;
+//   div.innerHTML = typeof (input1);
+// })
+
+
+// --------------------------------------task14
+
+// f11 = () => {
+//   // div.innerHTML = input1.value + select.value + input2.value;
+//   num1 = +document.querySelector('.input1').value;
+//   num2 = +document.querySelector('.input2').value;
+//   selector = document.querySelector('.select').value;
+//   // if (selector == '+') {
+//   //   div.innerHTML = num1 + num2;
+//   // }
+//   // else if (selector == '-') {
+//   //   div.innerHTML = num1 - num2;
+//   // }
+//   // else if (selector == '*') {
+//   //   div.innerHTML = num1 * num2;
+//   // }
+//   // else if (selector == '/') {
+//   //   div.innerHTML = num1 / num2;
+//   // }
+//   // else if (selector == '%') {
+//   //   div.innerHTML = num1 % num2;
+//   // }
+//   // else if (selector == '%') {
+//   //   div.innerHTML = num1 ** num2;
+//   // }
+//   // else {
+//   //   div.innerHTML = 'something wrong'
+//   // }
+//   switch (selector) {
+//     case '+':
+//       div.innerHTML = num1 + num2;
+//       break;
+//     case '-':
+//       div.innerHTML = num1 - num2;
+//       break;
+//     case '*':
+//       div.innerHTML = num1 * num2;
+//       break;
+//     case '/':
+//       div.innerHTML = num1 / num2;
+//       break;
+//     case '%':
+//       div.innerHTML = num1 % num2;
+//       break;
+//     case '**':
+//       div.innerHTML = num1 ** num2;
+//       break;
+//     default:
+//       div.innerHTML = 'Error';
+//       break;
+//   }
+// }
+// btn1.addEventListener('click', f11)
+
+
+// ---------------------------------------task15
+
+
+// f15 = () => {
+//   input1 = document.querySelector('.select1');
+//   input2 = document.querySelector('.select2');
+//   operator = document.querySelector('.select');
+//   num1 = +input1.value;
+//   num2 = +input2.value;
+//   operation = operator.value;
+//   // switch (operation) {
+//   //   case '&&':
+//   //     div.innerHTML = num1 && num2
+//   //     break;
+//   //   case '||':
+//   //     div.innerHTML = num1 || num2
+//   //     break;
+//   //   default:
+//   //     div.innerHTML = 'error operation';
+//   //     break;
+//   // }
+
+//   if (operator == '&&') {
+//     div.innerHTML = num1 && num2;
+//   }
+//   else {
+//     div.innerHTML = num1 || num2;
+//   }
+// }
+
+// btn1.addEventListener('click', f15);
