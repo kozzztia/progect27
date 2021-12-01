@@ -587,3 +587,62 @@ check = document.querySelector('.check');
 // })
 
 // ------------------------------------task16
+
+// btn.addEventListener('click', () => {
+//   select = +document.querySelector('.select').value;
+
+
+//   switch (select) {
+//     case 1:
+//       div.innerHTML = select;
+//       div.style.backgroundColor = 'white';
+//       break;
+//     case 2:
+//       div.innerHTML = select;
+//       div.style.backgroundColor = 'red';
+//       break;
+//     case 3:
+//       div.innerHTML = select;
+//       div.style.backgroundColor = 'green';
+//       break;
+//     case 4:
+//       div.innerHTML = select;
+//       div.style.backgroundColor = 'pink';
+//       break;
+//     case 5:
+//       div.innerHTML = select;
+//       div.style.backgroundColor = 'yellow';
+//       break;
+//     default:
+//       break;
+//   }
+// })
+
+// --------------------------------------task17
+
+// document.querySelector('.select').addEventListener('change', () => {
+//   div.textContent = document.querySelector('.select').value;
+// })
+// ---------------------------------------task18
+
+// document.querySelector('.select').addEventListener('change', () => {
+//   document.querySelector('.input').value =
+//     document.querySelector('.select').value;
+// })
+
+// -----------------------------------------task19
+
+// btn.addEventListener('click', () => {
+//   text = document.querySelector('.text').value;
+//   password = document.querySelector('.password').value;
+//   div.innerHTML = '<h1>' + text + " - " + password + '</h1>';
+// })
+
+// ----------------------------------------task20
+
+// btn.addEventListener('click', () => {
+//   text = document.querySelector('.text').value;
+//   password = document.querySelector('.password').value;
+
+//   div.innerHTML = '<h1>' + text + " - " + password + '</h1>';
+// })
