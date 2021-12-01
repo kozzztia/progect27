@@ -650,28 +650,33 @@
 
 
 
-btn = document.querySelector('.btn');
-div = document.querySelector('.div');
-btn.addEventListener('click', () => {
+// btn = document.querySelector('.btn');
+// div = document.querySelector('.div');
+// btn.addEventListener('click', () => {
 
-  let input = document.querySelector('input').value;
-  // let arr = input.split('');
-  let arr = input;
-  let x = [];
-  let y = [];
-  let other = []
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == '(') {
-      x.push(arr[i]);
-    }
-    else if (arr[i] == ')') {
-      y.push(arr[i]);
-    }
-    else {
-      other.push(arr[i]);
-    }
-  }
-  div.innerHTML =
-    x.length + '- знака  ( ' + ' и ' + y.length + '- знака - ) ,' + other.length + ' - остальных знаков';
+//   let input = document.querySelector('input').value;
+// let arr = input.split('');
+//   let arr = input;
+//   let x = [];
+//   let y = [];
+//   let other = []
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == '(') {
+//       x.push(arr[i]);
+//     }
+//     else if (arr[i] == ')') {
+//       y.push(arr[i]);
+//     }
+//     else {
+//       other.push(arr[i]);
+//     }
+//   }
+//   div.innerHTML =
+//     x.length + '- знака  ( ' + ' и ' + y.length + '- знака - ) ,' + other.length + ' - остальных знаков';
 
-})
+// })
+
+
+for (let i = 0; i < 10; i++) {
+  document.querySelector('div').textContent += i;
+}
