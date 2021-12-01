@@ -655,7 +655,8 @@ div = document.querySelector('.div');
 btn.addEventListener('click', () => {
 
   let input = document.querySelector('input').value;
-  let arr = input.split('');
+  // let arr = input.split('');
+  let arr = input;
   let x = [];
   let y = [];
   let other = []
