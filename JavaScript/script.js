@@ -171,9 +171,9 @@
 
 
 // ---------------section 3 ---------------------------
-const btn1 = document.querySelector('.btn1');
+// const btn1 = document.querySelector('.btn1');
 // // const btn2 = document.querySelector('.btn2');
-const div = document.querySelector('.div');
+// const div = document.querySelector('.div');
 // const input1 = document.querySelector('.input1');
 // const input2 = document.querySelector('.input2');
 // task 1----------------------------------------
@@ -425,3 +425,165 @@ const div = document.querySelector('.div');
 // }
 
 // btn1.addEventListener('click', f15);
+
+
+// --------------------------------------------------------------unit4
+// -----------------------------task1
+div = document.querySelector('.div');
+btn = document.querySelector('.btn');
+input = document.querySelector('.input1');
+inputBtn = document.querySelector('.inputBtn');
+p = document.querySelector('.p')
+n = 'task № ';
+check = document.querySelector('.check');
+
+// btn.addEventListener('click', () => {
+//   div.innerHTML = 'task1';
+// })
+// ------------------------------task2
+
+// inputBtn.addEventListener('click', () => {
+//   div.innerHTML = 'task 2';
+// })
+
+// ------------------------------task3
+// p.addEventListener('click', () => {
+//   p.innerHTML = n + 3;
+// })
+
+// -------------------------------task4
+
+
+// btn.addEventListener('click', () => {
+//   text = check.value;
+//   if (check.checked == true) {
+//     div.innerHTML = n + text;
+//   }
+//   else {
+//     div.innerHTML = false;
+//   }
+// })
+
+// --------------------------------task6
+
+// btn.addEventListener('click', () => {
+//   let hide = document.querySelector('.hide');
+//   num = hide.value;
+//   p.textContent = num;
+// })
+
+// -------------------------------task7
+
+// btn.addEventListener('click', () => {
+//   pass = document.querySelector('.pass').value;
+//   num = pass.length;
+//   if (num <= 6) {
+//     console.log(pass.length);
+//     div.textContent = "0";
+//   }
+//   else if (num > 6) {
+//     console.log(pass.length);
+//     div.textContent = "1";
+//   }
+//   console.log(pass.length);
+// })
+
+// ------------------------------------task8
+
+
+
+// btn.addEventListener('click', () => {
+//   div.innerHTML = '<input type="text"class="input1">';
+//   div.innerHTML += '<button class="btn1">go</button>';
+
+//   btn1 = document.querySelector('.btn1').addEventListener('click', () => {
+//     div.innerHTML = document.querySelector('.input1').value;;
+//   })
+// })
+
+// --------------------------------------task9
+
+// btn.addEventListener('click', () => {
+//   radio = document.querySelector('.radio');
+//   text = radio.value;
+//   if (radio.checked == true) {
+//     p.innerHTML = text;
+//   }
+//   else {
+//     p.innerHTML = 0;
+//   }
+// })
+
+// -----------------------------------------task10
+
+// btn.addEventListener('click', () => {
+//   color = document.querySelector('.color').value;
+//   div.style.backgroundColor = color;
+// })
+
+// -----------------------------------------task11
+
+// btn.addEventListener('click', () => {
+//   color = document.querySelector('.color').value;
+//   document.querySelector('.color1').value = color;
+// })
+
+// -------------------------------------------task12
+
+// btn.addEventListener('click', () => {
+//   data = document.querySelector('.data').value;
+//   p.textContent = data;
+//   div.innerHTML = '<h1> ' + data + '</ph1>';
+// })
+
+// -------------------------------------------task13
+// let range = document.querySelector('.range');
+// range.addEventListener('change', () => {
+//   num = +range.value;
+//   switch (num) {
+//     case 10:
+//       div.innerHTML = range.value;
+//       div.style.backgroundColor = 'white';
+//       break;
+//     case 20:
+//       div.innerHTML = range.value;
+//       div.style.backgroundColor = 'red';
+//       break;
+//     case 40:
+//       div.innerHTML = range.value;
+//       div.style.backgroundColor = 'green';
+//       break;
+//     case 60:
+//       div.innerHTML = range.value;
+//       div.style.backgroundColor = 'pink';
+//       break;
+//     case 80:
+//       div.innerHTML = range.value;
+//       div.style.backgroundColor = 'yellow';
+//       break;
+//     case 100:
+//       div.innerHTML = range.value;
+//       div.style.backgroundColor = 'gray';
+//       break;
+//     default:
+//       break;
+//   }
+// })
+
+// ----------------------------------task14
+
+// btn.addEventListener('click', () => {
+//   text = document.querySelector('.textarea');
+//   div.innerHTML = text.value;
+//   text.value = '';
+// })
+
+// ----------------------------------task15
+
+// btn.addEventListener('click', () => {
+//   text = document.querySelector('.textarea');
+//   document.querySelector('.textarea1').value = text.value;
+
+// })
+
+// ------------------------------------task16
