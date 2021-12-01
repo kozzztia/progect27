@@ -429,13 +429,13 @@
 
 // --------------------------------------------------------------unit4
 // -----------------------------task1
-div = document.querySelector('.div');
-btn = document.querySelector('.btn');
-input = document.querySelector('.input1');
-inputBtn = document.querySelector('.inputBtn');
-p = document.querySelector('.p')
-n = 'task № ';
-check = document.querySelector('.check');
+// div = document.querySelector('.div');
+// btn = document.querySelector('.btn');
+// input = document.querySelector('.input1');
+// inputBtn = document.querySelector('.inputBtn');
+// p = document.querySelector('.p')
+// n = 'task № ';
+// check = document.querySelector('.check');
 
 // btn.addEventListener('click', () => {
 //   div.innerHTML = 'task1';
@@ -646,3 +646,31 @@ check = document.querySelector('.check');
 
 //   div.innerHTML = '<h1>' + text + " - " + password + '</h1>';
 // })
+
+
+
+
+btn = document.querySelector('.btn');
+div = document.querySelector('.div');
+btn.addEventListener('click', () => {
+
+  let input = document.querySelector('input').value;
+  let arr = input.split('');
+  let x = [];
+  let y = [];
+  let other = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == '(') {
+      x.push(arr[i]);
+    }
+    else if (arr[i] == ')') {
+      y.push(arr[i]);
+    }
+    else {
+      other.push(arr[i]);
+    }
+  }
+  div.innerHTML =
+    x.length + '- знака  ( ' + ' и ' + y.length + '- знака - ) ,' + other.length + ' - остальных знаков';
+
+})
