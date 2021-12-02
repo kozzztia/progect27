@@ -675,8 +675,22 @@
 //     x.length + '- знака  ( ' + ' и ' + y.length + '- знака - ) ,' + other.length + ' - остальных знаков';
 
 // })
+document.querySelector('.btn').addEventListener('click', () => {
+  let input = document.querySelector('.input').value;
+  for (let i = 0; i < input.length; i++) {
+    document.querySelector('div').textContent += i;
+    let count = 0;
+    if (input[0] != '(') {
+      console.log('error')
+      break;
+    }
+    else if (input[i] == '(') {
+      count++;
+    }
+    else if (input[i] == ')') {
+      count--;
+    }
+    console.log(count);
+  }
 
-
-for (let i = 0; i < 10; i++) {
-  document.querySelector('div').textContent += i;
-}
+})
