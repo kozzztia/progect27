@@ -679,6 +679,7 @@
 let div = document.querySelector('.div');
 let push = document.querySelector('.btn');
 let input = document.querySelector('.input');
+let input1 = document.querySelector('.input1');
 
 
 // -----------------------------------task 1
@@ -732,6 +733,94 @@ let input = document.querySelector('.input');
 //     }
 //   }
 // }
+// ------------------------------task 6
+// let fun = () => {
+//   for (x = 0; x < 3; x++) {
+//     for (i = 0; i < 6; i++) {
+//       div.innerHTML += '*';
+//     }
+//     div.innerHTML += '<br>';
+//   }
+// }
+// ----------------------------------bonus
+// let fun = () => {
+//   div.innerHTML = '';
+//   let br = input.value;
+//   let stars = 7;
+//   for (i = 1; i <= br * stars; i++) {
+//     div.innerHTML += '*';
+//     if (i % stars == 0) {
+//       div.innerHTML += '<br>';
+//     }
+//     input.value = '';
+//   }
+// }
+// --------------------------------------task7
+// let fun = () => {
+//   div.innerHTML = '';
+//   let num = input.value;
+//   for (i = num; i >= 0; i--) {
+//     div.innerHTML += i + ' ';
+//   }
+//   input.value = '';
+// }
+
+// ---------------------------------------task18
+// let fun = () => {
+//   num = input.value;
+//   num1 = input1.value;
+//   div.innerHTML = '';
+//   br = 0;
+//   for (i = num; i <= num1; i++) {
+//     div.innerHTML += i + ' ';
+//     if (i % 6 == 0) {
+//       div.innerHTML += '<br>'
+//       br++;
+//     }
+//   }
+//   console.log('number = ' + br)
+// }
+
+// ---------------------------------------task9
+
+// fun = () => {
+//   let num = input.value;
+//   let num1 = input1.value;
+//   div.innerHTML = '';
+//   if (num < num1) {
+//     for (let i = num; i <= num1; i++) {
+//       div.innerHTML += i + ' ';
+//     }
+//   }
+//   else {
+//     for (let i = num; i >= num1; i--) {
+//       div.innerHTML += i + ' ';
+//     }
+//   }
+//   input1.value = input.value = '';
+// }
+
+// ---------------------------------task10
+
+// let fun = () => {
+//   num = input.value;
+//   num1 = input1.value;
+//   for (i = num; i <= num1; i++) {
+//     if (i % 2 == 0) {
+//       div.innerHTML += i + ' ';
+//     }
+//   }
+// }
+
+// ----------------------------------task 11
 
 
+
+let fun = () => {
+  let element = document.querySelectorAll('.element');
+  for (i = 0; i < element.length; i++) {
+    div.innerHTML += element[i].textContent + ' ';
+
+  }
+}
 push.addEventListener('click', fun)
