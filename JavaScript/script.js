@@ -675,22 +675,63 @@
 //     x.length + '- знака  ( ' + ' и ' + y.length + '- знака - ) ,' + other.length + ' - остальных знаков';
 
 // })
-document.querySelector('.btn').addEventListener('click', () => {
-  let input = document.querySelector('.input').value;
-  for (let i = 0; i < input.length; i++) {
-    document.querySelector('div').textContent += i;
-    let count = 0;
-    if (input[0] != '(') {
-      console.log('error')
-      break;
-    }
-    else if (input[i] == '(') {
-      count++;
-    }
-    else if (input[i] == ')') {
-      count--;
-    }
-    console.log(count);
-  }
+// ---------------------------------------------------------unit 5
+let div = document.querySelector('.div');
+let push = document.querySelector('.btn');
+let input = document.querySelector('.input');
 
-})
+
+// -----------------------------------task 1
+// push.addEventListener('click', () => {
+//   for (var i = 1; i <= 50; i++) {
+//     div.innerHTML += i + " "
+//   }
+// })
+
+// ------------------------------------task 2
+// let fun = function () {
+//   for (var i = 2; i <= 122; i = i + 2) {
+//     div.innerHTML += i + " ";
+//   }
+// }
+// push.addEventListener('click', fun)
+//
+// -----------------------------------task3
+
+// push.addEventListener('click', () => {
+//   for (i = 25; i >= 7; i--) {
+//     div.innerHTML += i + ' ';
+//   }
+// })
+
+// -------------------------------------task4
+
+// let fun = function () {
+//   for (let i = 77; i >= 35; i = i - 3) {
+//     div.innerHTML += i + '_';
+//   }
+// }
+
+// --------------------------------------task5
+
+// let fun = function () {
+//   for (let i = 1; i < 17; i++) {
+//     if (i % 2 == 0) {
+//       div.innerHTML += i + '_' + '**'
+//     }
+//     else {
+//       div.innerHTML += i + '_' + '*' + ' '
+//     }
+//   }
+
+// }
+// let fun = () => {
+//   for (i = 1; i < 122; i++) {
+//     if (i % 2 == 0) {
+//       div.innerHTML += i + ' ';
+//     }
+//   }
+// }
+
+
+push.addEventListener('click', fun)
