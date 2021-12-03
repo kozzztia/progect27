@@ -816,11 +816,59 @@ let input1 = document.querySelector('.input1');
 
 
 
-let fun = () => {
-  let element = document.querySelectorAll('.element');
-  for (i = 0; i < element.length; i++) {
-    div.innerHTML += element[i].textContent + ' ';
+// let fun = () => {
+//   let element = document.querySelectorAll('.element');
+//   for (i = 0; i < element.length; i++) {
+//     div.innerHTML += element[i].textContent + ' ';
+//     element[i].innerHTML += ' element №' + i;
+//   }
+// }
 
-  }
-}
+
+
+// -----------------------------------task 12
+// const fun = () => {
+//   element = document.querySelectorAll('.element');
+//   for (i = 0; i < element.length; i++) {
+//     element[i].style.backgroundColor = 'skyblue';
+//     element[i].style.fontSize = '20px';
+//     element[i].style.border = '1px solid black';
+//     element[i].style.color = 'red';
+//   }
+// }
+
+// -----------------------------------task13
+// let fun = () => {
+//   let arrInput = document.querySelectorAll('.input');
+//   let x = 1;
+//   for (i = 0; i < arrInput.length; i++) {
+//     arrInput[i].value = x;
+//     x++;
+//   }
+//   div.textContent = arrInput.length;
+// }
+
+
+// ---------------------------------------task 14
+// let fun = () => {
+//   let input = document.querySelectorAll('.input');
+//   for (i = 0; i < input.length; i++) {
+//     if (input[i].checked) {
+//       div.textContent += input[i].value + ' ';
+//       input[i].checked = false; //whery interesting
+//     }
+//   }
+// }
+// -------------------------------------------task15
+// let fun = function () {
+//   div.innerHTML = '';
+//   let arr = '10 0 9 1 8 2 7 3 6 4 5 5 4 6 3 7 2 8 1 9 0 10';
+//   let arrCorrect = arr.split(' ');
+//   for (i = 0; i < arrCorrect.length; i++) {
+//     div.innerHTML += arrCorrect[i] + '  ';
+//   }
+
+// }
+// -------------------------------------------------------------------unit 6
+
 push.addEventListener('click', fun)
