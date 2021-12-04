@@ -171,9 +171,18 @@ let push = document.querySelector('.push');
 //   input.value = "";
 // })
 function one() {
+  // ok = prompt('go?',);
+  // console.log(ok);
 
-
+  var person;
+  if (confirm('go?')) {
+    person = prompt('realy?');
+    alert('ansver :' + person);
+  } else {
+    alert('stop')
+  }
 }
+
 
 
 push.addEventListener('click', one)
