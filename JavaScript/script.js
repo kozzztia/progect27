@@ -129,17 +129,44 @@ push.addEventListener('click', () => {
   // }
 
   // ----------------------------------------task10
-  for (i = 0; i <= input.value; i++) {
-    for (k = 1; k <= 10; k++) {
-      if (k % 10 == 0) {
-        div.innerHTML += `${i + 1}0`;
-      }
-      else {
-        div.innerHTML += `${i}${k} `;
-      }
-    }
-    div.innerHTML += '<br>'
-  }
-  div.style.textAlign = 'center';
+  // for (i = 0; i <= input.value; i++) {
+  //   for (k = 1; k <= 10; k++) {
+  //     if (k % 10 == 0) {
+  //       div.innerHTML += `${i + 1}0`;
+  //     }
+  //     else {
+  //       div.innerHTML += `${i}${k} `;
+  //     }
+  //   }
+  //   div.innerHTML += '<br>'
+  // }
+
+  // ------------------------------------------task11
+  // for (i = input.value; i <= 9; i++) {
+  //   for (k = 1; k <= 9; k++) {
+  //     div.innerHTML += `${i} * ${k} = ${i * k} <br>`;
+  //   }
+  //   div.innerHTML += '<hr>';
+  // }
+
+  // ----------------------------------------------task12
+
+  // for (let i = 0; i < input.value / 2; i++) {
+  //   for (let k = 0; k < input.value; k++) {
+  //     div.innerHTML += '*';
+  //   }
+  //   div.innerHTML += '<br>'
+  // }
+  // -----------------------------------------------task13
+
+  // for (i = 1; i <= input.value; i++) {
+  //   for (k = input.value; k >= i; k--) {
+  //     div.innerHTML += "*";
+  //   }
+  //   div.innerHTML += '<br>';
+  // }
+  // div.style.textAlign = 'left';
+
+
   input.value = "";
 })

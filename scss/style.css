@@ -15,3 +15,6 @@ div{
     text-align: left;
     padding: 20px;
 }
+hr{
+    border: 1px solid red;
+}
