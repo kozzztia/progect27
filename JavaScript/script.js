@@ -27,8 +27,7 @@ let push = document.querySelector('.push');
 //   div.innerHTML += '<br>';
 // })
 
-// push.addEventListener('click', () => {
-//   div.innerHTML = "";
+
 
 // ---------------------------------task1;
 // for (let i = 0; i < input.value; i++) {
@@ -158,31 +157,38 @@ let push = document.querySelector('.push');
 //   div.innerHTML += '<br>'
 // }
 // -----------------------------------------------task13
+push.addEventListener('click', () => {
+  div.innerHTML = "";
+  // for (let i = 0; i < 3; i++) {
+  //   if (i == 0) {
+  //     div.innerHTML += '&emsp;' + '&emsp;';
+  //   }
+  //   else if (i == 1) {
+  //     div.innerHTML += '&emsp;';
+  //   }
+  //   for (let j = 0; j < 5; j++) {
+  //     div.innerHTML += '*';
+  //   }
+  //   div.innerHTML += "<br>";
+  // }
+  // -----------------------------------------------task14
 
-// for (i = 1; i <= input.value; i++) {
-//   for (k = input.value; k >= i; k--) {
-//     div.innerHTML += "*";
-//   }
-//   div.innerHTML += '<br>';
-// }
-// div.style.textAlign = 'left';
-
-
-//   input.value = "";
-// })
-function one() {
-  // ok = prompt('go?',);
-  // console.log(ok);
-
-  var person;
-  if (confirm('go?')) {
-    person = prompt('realy?');
-    alert('ansver :' + person);
-  } else {
-    alert('stop')
+  for (let i = 2; i <= input.value; i++) {
+    for (let k = 1; k <= i; k++) {
+      div.innerHTML += "*";
+    }
+    div.innerHTML += '<br>'
   }
-}
+  for (let z = input.value; z > 2; z--) {
+    for (let y = z; y > 1; y--) {
+      div.innerHTML += "*";
+    }
+    div.innerHTML += '<br>'
+  }
+  div.style.textAlign = 'center'
 
 
 
-push.addEventListener('click', one)
+
+
+})
