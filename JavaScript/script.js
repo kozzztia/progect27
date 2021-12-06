@@ -173,22 +173,38 @@ push.addEventListener('click', () => {
   // }
   // -----------------------------------------------task14
 
-  for (let i = 2; i <= input.value; i++) {
-    for (let k = 1; k <= i; k++) {
-      div.innerHTML += "*";
-    }
-    div.innerHTML += '<br>'
-  }
-  for (let z = input.value; z > 2; z--) {
-    for (let y = z; y > 1; y--) {
-      div.innerHTML += "*";
-    }
-    div.innerHTML += '<br>'
-  }
-  div.style.textAlign = 'center'
-
-
-
-
-
+  // for (let i = 2; i <= input.value; i++) {
+  //   for (let k = 1; k <= i; k++) {
+  //     div.innerHTML += "*";
+  //   }
+  //   div.innerHTML += '<br>'
+  // }
+  // for (let z = input.value; z > 2; z--) {
+  //   for (let y = z; y > 1; y--) {
+  //     div.innerHTML += "*";
+  //   }
+  //   div.innerHTML += '<br>'
+  // }
+  // div.style.textAlign = 'center'
+  // value = '';
+  // for (i = 1; i <= 10; i++) {
+  //   for (j = 1; j <= 10; j++) {
+  //     if (i == 10 && j >= 10 - 2) {
+  //       value += ' &emsp; ';
+  //     }
+  //     else if (i == 1 && j >= 10 - 2) {
+  //       value += ' &emsp; ';
+  //     }
+  //     else {
+  //       if (j > 1 && j < 10) {
+  //         value += ' +';
+  //       }
+  //       else {
+  //         value += ' * ';
+  //       }
+  //     }
+  //   }
+  //   value += '<br>';
+  // }
+  // div.innerHTML = value;
 })
