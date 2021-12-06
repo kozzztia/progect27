@@ -342,23 +342,44 @@ let push = document.querySelector('.push');
 
 // ------------------------------------task9
 
-function task9() {
-  num = +input.value;
-  text = "";
-  if (num % 2 === 0) {
-    text = true;
-  }
-  else if (num % 2 != 0) {
-    text = false;
-  }
-  else {
-    text = 'ERROR'
-  }
-  div.innerHTML = text;
-  input.value = ""
-  return
-}
-push.onclick = () => {
-  task9();
+// function task9() {
+//   num = +input.value;
+//   text = "";
+//   if (num % 2 === 0) {
+//     text = true;
+//   }
+//   else if (num % 2 != 0) {
+//     text = false;
+//   }
+//   else {
+//     text = 'ERROR'
+//   }
+//   div.innerHTML = text;
+//   input.value = ""
+//   return
+// }
+// push.onclick = () => {
+//   task9();
+// }
 
+// ------------------------------------task10
+
+function task10() {
+  num1 = input.value;
+  num2 = input1.value;
+  text = "";
+  if (num1 > num2) {
+    text = num1;
+  }
+  else if (num1 < num2) {
+    text = num2;
+  }
+  else if (num1 == num2) {
+    text = num1 || num2;
+  } else {
+    text = 'incorect numbers, try with something alse'
+  }
+  div.textContent = text;
 }
+
+push.onclick = task10;
