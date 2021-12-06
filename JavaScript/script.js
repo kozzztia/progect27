@@ -157,55 +157,91 @@ let push = document.querySelector('.push');
 //   div.innerHTML += '<br>'
 // }
 // -----------------------------------------------task13
-push.addEventListener('click', () => {
-  div.innerHTML = "";
-  // for (let i = 0; i < 3; i++) {
-  //   if (i == 0) {
-  //     div.innerHTML += '&emsp;' + '&emsp;';
-  //   }
-  //   else if (i == 1) {
-  //     div.innerHTML += '&emsp;';
-  //   }
-  //   for (let j = 0; j < 5; j++) {
-  //     div.innerHTML += '*';
-  //   }
-  //   div.innerHTML += "<br>";
-  // }
-  // -----------------------------------------------task14
+// push.addEventListener('click', () => {
+//   div.innerHTML = "";
+// for (let i = 0; i < 3; i++) {
+//   if (i == 0) {
+//     div.innerHTML += '&emsp;' + '&emsp;';
+//   }
+//   else if (i == 1) {
+//     div.innerHTML += '&emsp;';
+//   }
+//   for (let j = 0; j < 5; j++) {
+//     div.innerHTML += '*';
+//   }
+//   div.innerHTML += "<br>";
+// }
+// -----------------------------------------------task14
 
-  // for (let i = 2; i <= input.value; i++) {
-  //   for (let k = 1; k <= i; k++) {
-  //     div.innerHTML += "*";
-  //   }
-  //   div.innerHTML += '<br>'
-  // }
-  // for (let z = input.value; z > 2; z--) {
-  //   for (let y = z; y > 1; y--) {
-  //     div.innerHTML += "*";
-  //   }
-  //   div.innerHTML += '<br>'
-  // }
-  // div.style.textAlign = 'center'
-  // value = '';
-  // for (i = 1; i <= 10; i++) {
-  //   for (j = 1; j <= 10; j++) {
-  //     if (i == 10 && j >= 10 - 2) {
-  //       value += ' &emsp; ';
-  //     }
-  //     else if (i == 1 && j >= 10 - 2) {
-  //       value += ' &emsp; ';
-  //     }
-  //     else {
-  //       if (j > 1 && j < 10) {
-  //         value += ' +';
-  //       }
-  //       else {
-  //         value += ' * ';
-  //       }
-  //     }
-  //   }
-  //   value += '<br>';
-  // }
-  // div.innerHTML = value;
+// for (let i = 2; i <= input.value; i++) {
+//   for (let k = 1; k <= i; k++) {
+//     div.innerHTML += "*";
+//   }
+//   div.innerHTML += '<br>'
+// }
+// for (let z = input.value; z > 2; z--) {
+//   for (let y = z; y > 1; y--) {
+//     div.innerHTML += "*";
+//   }
+//   div.innerHTML += '<br>'
+// }
+// div.style.textAlign = 'center'
+// value = '';
+// for (i = 1; i <= 10; i++) {
+//   for (j = 1; j <= 10; j++) {
+//     if (i == 10 && j >= 10 - 2) {
+//       value += ' &emsp; ';
+//     }
+//     else if (i == 1 && j >= 10 - 2) {
+//       value += ' &emsp; ';
+//     }
+//     else {
+//       if (j > 1 && j < 10) {
+//         value += ' +';
+//       }
+//       else {
+//         value += ' * ';
+//       }
+//     }
+//   }
+//   value += '<br>';
+// }
+// div.innerHTML = value;
 
-})
+
+
+
+
+
+// })
+// let one = function () {
+//   console.log('1')
+// }
+// push.onclick = one;
+
+// console.log(1 + one())
+// console.log(one())
+
+// let two = function (a = 2, b = 2) {
+//   return a * b;
+// }
+
+// console.log(two() * two());
+// let c = two(2, 4);
+// let d = two(2, 5);
+
+// div.innerHTML = c + d;
+
+// ---------------------------------------------------------------------rundom
+// function random(min, max) {
+//   return min + Math.floor(Math.random() * (max - min))
+// }
+// push.addEventListener('click', () => {
+//   div.innerHTML = '';
+//   let text = '';
+//   for (i = 0; i <= input.value; i++) {
+//     text += random(1, input.value) + ' ';
+//   }
+//   div.innerHTML += text;
+// })
+// ========================================================================unit7
