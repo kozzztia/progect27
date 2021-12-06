@@ -276,16 +276,26 @@ let push = document.querySelector('.push');
 // })
 // ------------------------------------task4
 
-function t4() {
-  year = +input.value;
-  if (year <= 1900 || year >= 2021) {
-    return 'false';
-  }
-  else {
-    return 2021 - year;
-  }
+// function t4() {
+//   year = +input.value;
+//   if (year <= 1900 || year >= 2021) {
+//     return 'false';
+//   }
+//   else {
+//     return 2021 - year;
+//   }
+// }
+// push.addEventListener('click', () => {
+//   div.innerHTML = t4() + ' years old';
+//   input.value = "";
+// })
+
+
+// ---------------------------------------task5
+function task5(name) {
+  // name = input.value;
+  return name;
 }
 push.addEventListener('click', () => {
-  div.innerHTML = t4() + ' years old';
-  input.value = "";
+  div.innerHTML = 'hello ' + task5('kostia');
 })
