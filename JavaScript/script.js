@@ -322,11 +322,18 @@ let push = document.querySelector('.push');
 
 // ---------------------------------------task8 trim() clear space around
 
+// function task8() {
+//   let value = input.value;
+//   let valueN = input.value.trim();
+//   input.value = valueN;
+//   console.log(valueN.length)
+//   return valueN
+// }
+// push.onclick = () => {
+//   div.innerHTML = task8();
+// };
 function task8() {
-  let value = input.value.trim();
-  // input.value = valueN;
-  // console.log(valueN.length)
-  return value
+  return input.value.trim();
 }
 push.onclick = () => {
   div.innerHTML = task8();
