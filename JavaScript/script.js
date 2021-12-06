@@ -292,10 +292,20 @@ let push = document.querySelector('.push');
 
 
 // ---------------------------------------task5
-function task5(name) {
-  // name = input.value;
-  return name;
+// function task5(name) {
+//   // name = input.value;
+//   return name;
+// }
+// push.addEventListener('click', () => {
+//   div.innerHTML = 'hello ' + task5('kostia');
+// })
+// ---------------------------------------task6
+
+function task6(min, max) {
+  min = +input.value;
+  max = +input1.value;
+  return min + Math.floor(Math.random() * (max - min));
 }
-push.addEventListener('click', () => {
-  div.innerHTML = 'hello ' + task5('kostia');
-})
+push.onclick = function () {
+  div.innerHTML = task6();
+}
