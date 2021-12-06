@@ -332,9 +332,33 @@ let push = document.querySelector('.push');
 // push.onclick = () => {
 //   div.innerHTML = task8();
 // };
-function task8() {
-  return input.value.trim();
+// ------------------v2
+// function task8() {
+//   return input.value.trim();
+// }
+// push.onclick = () => {
+//   div.innerHTML = task8();
+// };
+
+// ------------------------------------task9
+
+function task9() {
+  num = +input.value;
+  text = "";
+  if (num % 2 === 0) {
+    text = true;
+  }
+  else if (num % 2 != 0) {
+    text = false;
+  }
+  else {
+    text = 'ERROR'
+  }
+  div.innerHTML = text;
+  input.value = ""
+  return
 }
 push.onclick = () => {
-  div.innerHTML = task8();
-};
+  task9();
+
+}
