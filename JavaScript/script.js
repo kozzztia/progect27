@@ -3,6 +3,7 @@
 
 let div = document.querySelector('.div');
 let input = document.querySelector('.input');
+let input1 = document.querySelector('.input1');
 let push = document.querySelector('.push');
 
 
@@ -245,3 +246,46 @@ let push = document.querySelector('.push');
 //   div.innerHTML += text;
 // })
 // ========================================================================unit7
+
+
+// --------------------------------task1
+
+// function t1() {
+//   let a1 = input.value;
+//   div.innerHTML += a1;
+// }
+// push.addEventListener('click', t1)
+
+// ----------------------------------task2
+
+// function t2() {
+//   let a2 = +input.value;
+//   return a2;
+// }
+// push.addEventListener('click', () => {
+//   div.innerHTML += t2() + t2();
+// })
+// ----------------------------------task3
+// function t3(a, b) {
+//   return a * b;
+// }
+// push.addEventListener('click', () => {
+//   let c = t3(3, 4);
+//   let d = t3(4, 4);
+//   div.innerHTML = c + ' ' + d;
+// })
+// ------------------------------------task4
+
+function t4() {
+  year = +input.value;
+  if (year <= 1900 || year >= 2021) {
+    return 'false';
+  }
+  else {
+    return 2021 - year;
+  }
+}
+push.addEventListener('click', () => {
+  div.innerHTML = t4() + ' years old';
+  input.value = "";
+})
