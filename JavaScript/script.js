@@ -312,10 +312,22 @@ let push = document.querySelector('.push');
 
 // -----------------------------------------task7
 
-function task7(min, max) {
-  return min + Math.random() * (max - min);
+// function task7(min, max) {
+//   return min + Math.random() * (max - min);
+// }
+// push.onclick = function () {
+//   div.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+//   console.log(div.style.backgroundColor);
+// }
+
+// ---------------------------------------task8 trim() clear space around
+
+function task8() {
+  let value = input.value.trim();
+  // input.value = valueN;
+  // console.log(valueN.length)
+  return value
 }
-push.onclick = function () {
-  div.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
-  console.log(div.style.backgroundColor);
-}
+push.onclick = () => {
+  div.innerHTML = task8();
+};
