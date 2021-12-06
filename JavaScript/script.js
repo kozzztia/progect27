@@ -301,11 +301,21 @@ let push = document.querySelector('.push');
 // })
 // ---------------------------------------task6
 
-function task6(min, max) {
-  min = +input.value;
-  max = +input1.value;
-  return min + Math.floor(Math.random() * (max - min));
+// function task6(min, max) {
+//   min = +input.value;
+//   max = +input1.value;
+//   return min + Math.floor(Math.random() * (max - min));
+// }
+// push.onclick = function () {
+//   div.innerHTML = task6();
+// }
+
+// -----------------------------------------task7
+
+function task7(min, max) {
+  return min + Math.random() * (max - min);
 }
 push.onclick = function () {
-  div.innerHTML = task6();
+  div.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+  console.log(div.style.backgroundColor);
 }
