@@ -387,13 +387,19 @@ let box = document.querySelector('.box');
 
 // =================================================================== innerHTML / textContent 
 
-console.log(box.innerHTML)
-console.log(box.textContent)
+// console.log(box.innerHTML)
+// console.log(box.textContent)
 
 div.innerHTML += box.innerHTML;
 div.innerHTML += box.innerText;
 div.innerHTML += box.textContent;
 
 
-// 
+//
+let span = document.querySelector('span');
+span.addEventListener('mouseover', function () {
+    console.log('go')
+    span.classList.add('blockActive');
 
+
+})

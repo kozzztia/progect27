@@ -26,10 +26,29 @@ p{
  
 .block{
     display: block;
+    position: relative;
+    left: 0;
+
+
 }
-b{
-    font-weight: bold;
+.blockActive{
+    animation-name: hidenBox;
+    animation-duration: 2s;
+
 }
-i{
-    font-style: italic;
+@keyframes hidenBox {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 10px;
+        left: 100px;
+    }
+    100%{
+        top: 0;
+        left: 200px;
+    }
+
 }
+
