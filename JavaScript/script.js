@@ -5,6 +5,7 @@ let div = document.querySelector('.div');
 let input = document.querySelector('.input');
 let input1 = document.querySelector('.input1');
 let push = document.querySelector('.push');
+let box = document.querySelector('.box');
 
 
 // push.addEventListener('click', () => {
@@ -364,22 +365,35 @@ let push = document.querySelector('.push');
 
 // ------------------------------------task10
 
-function task10() {
-  num1 = input.value;
-  num2 = input1.value;
-  text = "";
-  if (num1 > num2) {
-    text = num1;
-  }
-  else if (num1 < num2) {
-    text = num2;
-  }
-  else if (num1 == num2) {
-    text = num1 || num2;
-  } else {
-    text = 'incorect numbers, try with something alse'
-  }
-  div.textContent = text;
-}
+// function task10() {
+//   num1 = input.value;
+//   num2 = input1.value;
+//   text = "";
+//   if (num1 > num2) {
+//     text = num1;
+//   }
+//   else if (num1 < num2) {
+//     text = num2;
+//   }
+//   else if (num1 == num2) {
+//     text = num1 || num2;
+//   } else {
+//     text = 'incorect numbers, try with something alse'
+//   }
+//   div.textContent = text;
+// }
 
-push.onclick = task10;
+// push.onclick = task10;
+
+// =================================================================== innerHTML / textContent 
+
+console.log(box.innerHTML)
+console.log(box.textContent)
+
+div.innerHTML += box.innerHTML;
+div.innerHTML += box.innerText;
+div.innerHTML += box.textContent;
+
+
+// 
+

@@ -1,11 +1,10 @@
-h2{
-    text-align: center;
-}
+
 input{
     border: 1px solid #762311;
 }
 h2,h3,h4,h5,h6,h1{
     color: red;
+    text-align: center;
 }
 div{
     margin: 0 auto;
@@ -17,4 +16,20 @@ div{
 }
 hr{
     border: 1px solid red;
+}
+body{
+    text-align: center;
+}
+p{
+    text-indent: 25px;  
+}
+ 
+.block{
+    display: block;
+}
+b{
+    font-weight: bold;
+}
+i{
+    font-style: italic;
 }
