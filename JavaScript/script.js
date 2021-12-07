@@ -400,6 +400,8 @@ let span = document.querySelector('span');
 span.addEventListener('mouseover', function () {
     console.log('go')
     span.classList.add('blockActive');
-
-
+})
+span.addEventListener('mouseout', function () {
+    console.log('stop')
+    span.classList.remove('blockActive');
 })

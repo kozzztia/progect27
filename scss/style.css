@@ -34,6 +34,7 @@ p{
 .blockActive{
     animation-name: hidenBox;
     animation-duration: 2s;
+    transition : 2s;
 
 }
 @keyframes hidenBox {
