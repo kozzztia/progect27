@@ -385,23 +385,78 @@ let box = document.querySelector('.box');
 
 // push.onclick = task10;
 
-// =================================================================== innerHTML / textContent 
+// =================================================================== innerHTML / textContent
 
-// console.log(box.innerHTML)
-// console.log(box.textContent)
+// // console.log(box.innerHTML)
+// // console.log(box.textContent)
 
-div.innerHTML += box.innerHTML;
-div.innerHTML += box.innerText;
-div.innerHTML += box.textContent;
+// div.innerHTML += box.innerHTML;
+// div.innerHTML += box.innerText;
+// div.innerHTML += box.textContent;
 
 
-//
-let span = document.querySelector('span');
-span.addEventListener('mouseover', function () {
-    console.log('go')
-    span.classList.add('blockActive');
-})
-span.addEventListener('mouseout', function () {
-    console.log('stop')
-    span.classList.remove('blockActive');
-})
+// //
+// let span = document.querySelector('span');
+// span.addEventListener('mouseover', function () {
+//     console.log('go')
+//     span.classList.add('blockActive');
+// })
+// span.addEventListener('mouseout', function () {
+//     console.log('stop')
+//     span.classList.remove('blockActive');
+// })
+// ----------------------------------------------------------------------unit8 while , do while
+
+// let fun = () => {
+//     for (let i = 0; i < input.value; i++) {
+//         div.innerHTML += i + " ";
+//     }
+//     div.innerHTML += '<br>';
+// }
+// push.onclick = fun;
+// let fun1 = () => {
+//     text = "";
+//     div.innerHTML = "";
+//     let k = 0;
+//     while (k < input.value) {
+//         text += ' k = ' + k;
+//         k++;
+//     }
+//     div.innerHTML += text;
+// }
+// push.onclick = fun1;
+
+// let fun = () => {
+//     let sum = 0;
+//     let p = 0;
+//     while (p <= input.value) {
+//         p++;
+//         sum = sum + p;
+
+//     }
+//     div.innerHTML = 'sum = ' + sum;
+// }
+// push.onclick = fun;
+
+let fun = () => {
+    let flag = input.value;
+    let sum = '';
+    let p = 0;
+    let p1 = 0;
+    // -----------------
+    while (p < input.value) {
+        p++;
+        while (p1 < input.value) {
+            p1++;
+            if (p1 < flag) {
+                sum += 'o ';
+            } else {
+                sum += '* ';
+            }
+        }
+        sum += '<br>';
+        flag--;
+    }
+    div.innerHTML = sum;
+}
+push.onclick = fun;
