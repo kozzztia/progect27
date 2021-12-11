@@ -516,15 +516,34 @@ let box = document.querySelector('.box');
 
 // ----------------------------------task 5 
 
+// push.onclick = () => {
+//     let num = +input.value;
+//     let text = '';
+//     let i = 0;
+//     while (i < num) {
+//         i++;
+//         if (i % 2 == 0) {
+//             text += `${i}_**`;
+//         } else { text += `${i}_*`; }
+//     }
+//     div.innerHTML = text;
+// }
+
+// ------------------------------task 6
+
 push.onclick = () => {
     let num = +input.value;
-    let text = '';
     let i = 0;
+    let text = "";
     while (i < num) {
         i++;
-        if (i % 2 == 0) {
-            text += `${i}_**`;
-        } else { text += `${i}_*`; }
+        let k = 0;
+        while (k < num) {
+            k++;
+            text += '* '
+        }
+        text += '<br>'
     }
     div.innerHTML = text;
+
 }
