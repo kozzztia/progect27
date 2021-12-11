@@ -475,13 +475,56 @@ let box = document.querySelector('.box');
 // }
 // -------------------------------task2
 
+// push.onclick = () => {
+//     let num = +input.value;
+//     let text = ' ';
+//     let i = 0;
+//     while (i < num) {
+//         i = i + 2;
+//         text += `${i} `
+//     }
+//     div.innerHTML = text;
+// }
+
+// ---------------------------------task3
+// push.onclick = () => {
+//     let num = +input.value;
+//     let text = "";
+//     let i = num;
+//     while (i > 7) {
+//         i--;
+//         text += `${i} `;
+//     }
+//     div.innerHTML = text;
+// }
+
+// ---------------------------------task4
+
+// push.addEventListener('click', function () {
+//     let num = +input.value;
+//     let text = '';
+//     let i = num;
+//     if (i < 35) {
+//         text += 'error';
+//     }
+//     while (i > 35) {
+//         i--;
+//         text += `${i}_`;
+//     }
+//     div.innerHTML = text;
+// })
+
+// ----------------------------------task 5 
+
 push.onclick = () => {
-    num = +input.value;
-    text = ' ';
-    i = 0;
+    let num = +input.value;
+    let text = '';
+    let i = 0;
     while (i < num) {
-        i = i + 2;
-        text += `${i} `
+        i++;
+        if (i % 2 == 0) {
+            text += `${i}_**`;
+        } else { text += `${i}_*`; }
     }
     div.innerHTML = text;
 }
