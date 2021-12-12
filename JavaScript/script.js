@@ -514,7 +514,7 @@ let box = document.querySelector('.box');
 //     div.innerHTML = text;
 // })
 
-// ----------------------------------task 5 
+// ----------------------------------task 5
 
 // push.onclick = () => {
 //     let num = +input.value;
@@ -531,19 +531,64 @@ let box = document.querySelector('.box');
 
 // ------------------------------task 6
 
-push.onclick = () => {
-    let num = +input.value;
-    let i = 0;
-    let text = "";
-    while (i < num) {
-        i++;
-        let k = 0;
-        while (k < num) {
-            k++;
-            text += '* '
-        }
-        text += '<br>'
-    }
-    div.innerHTML = text;
+// push.onclick = () => {
+//     let num = +input.value;
+//     let i = 0;
+//     let text = "";
+//     while (i < num) {
+//         i++;
+//         let k = 0;
+//         while (k < num) {
+//             k++;
+//             text += '* '
+//         }
+//         text += '<br>'
+//     }
+//     div.innerHTML = text;
 
-}
+// }
+
+// ----------------------------task 7
+
+// push.onclick = () => {
+//     let num = +input.value;
+//     let text = "";
+//     let p = 0;
+//     if (input.value <= 0) {
+//         text += "error"
+//     } else {
+//         while (p <= num) {
+//             text += `${p} `;
+//             p++;
+//         }
+//     }
+//     div.innerHTML = text;
+// }
+
+// ------------------------task8
+
+// push.onclick = () => {
+//     let text = "";
+//     let num = + input.value;
+//     let num1 = + input1.value;
+//     let a;
+//     let b;
+//     if (num < num1) {
+//         a = num;
+//         b = num1;
+//     } else if (num > num1) {
+//         b = num;
+//         a = num1;
+//     } else if (num > num1) {
+//         b = num;
+//         a = num1;
+//     } else {
+//         text += "incorrect question";
+//     }
+//     while (a <= b) {
+//         text += `${a} `;
+//         a++;
+//     }
+//     div.innerHTML = text;
+// }
+
