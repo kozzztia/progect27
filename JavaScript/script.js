@@ -592,3 +592,24 @@ let box = document.querySelector('.box');
 //     div.innerHTML = text;
 // }
 
+// ----------------------------task9
+
+push.onclick = function () {
+    let num = +input.value;
+    let num1 = +input1.value;
+    if (num < num1) {
+        fun9(num, num1)
+    } else if (num > num1) {
+        fun9(num1, num)
+    } else {
+        console.log('error');
+    }
+}
+fun9 = function (a, b) {
+    let text = "";
+    while (a <= b) {
+        text += `${a} `;
+        a++;
+    }
+    div.innerHTML = text;
+}
