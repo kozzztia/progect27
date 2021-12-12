@@ -594,22 +594,105 @@ let box = document.querySelector('.box');
 
 // ----------------------------task9
 
-push.onclick = function () {
-    let num = +input.value;
-    let num1 = +input1.value;
-    if (num < num1) {
-        fun9(num, num1)
-    } else if (num > num1) {
-        fun9(num1, num)
-    } else {
-        console.log('error');
-    }
-}
-fun9 = function (a, b) {
-    let text = "";
-    while (a <= b) {
-        text += `${a} `;
-        a++;
+// push.onclick = function () {
+//     let num = +input.value;
+//     let num1 = +input1.value;
+//     if (num < num1) {
+//         fun9(num, num1)
+//     } else if (num > num1) {
+//         fun9(num1, num)
+//     } else {
+//         console.log('error');
+//     }
+// }
+// fun9 = function (a, b) {
+//     let text = "";
+//     while (a <= b) {
+//         text += `${a} `;
+//         a++;
+//     }
+//     div.innerHTML = text;
+// }
+
+// -----------------------------task10
+
+// push.onclick = () => {
+//     let text = "";
+//     let num = 1950;
+//     let num1 = 2000;
+
+//     while (num <= num1) {
+//         text += `${num}  <br>`;
+//         num = num + 2;
+//     }
+//     div.innerHTML = text;
+// }
+
+// ----------------------------task11
+
+// push.addEventListener('click', () => {
+//     let element = document.querySelectorAll('.element')
+//     let text = "";
+//     let i = 0;
+
+//     while (i < element.length) {
+//         text += `${element[i].innerHTML} `;
+//         i++
+//     }
+//     div.innerHTML = text;
+// })
+
+// ----------------------------task12--------------------------------------------------------------------------------------random
+// function task7(min, max) {
+//     return min + Math.random() * (max - min);
+// }
+// push.addEventListener('click', () => {
+//     let element = document.querySelectorAll('.element')
+//     let i = 0;
+
+//     while (i < element.length) {
+//         element[i].style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+//         i++
+//     }
+// })
+
+// ---------------------------------------------task13
+
+// push.addEventListener('click', () => {
+//     let element = document.querySelectorAll('.element');
+//     let i = 0;
+
+//     while (i < element.length) {
+//         element[i].innerHTML = `${i} `;
+//         i++;
+//     }
+// })
+
+// -----------------------------------------------task14
+
+// push.onclick = () => {
+//     let check = document.querySelectorAll('.input');
+//     let i = 0;
+//     let text = '';
+
+//     while (i < check.length) {
+//         if (check[i].checked) {
+//             text += `${check[i].value} `;
+//         }
+//         i++;
+//     }
+//     div.innerHTML = text;
+// }
+// --------------------------------------------------task15
+push.onclick = () => {
+    let text = '';
+    let i = 0;
+    let r = input.value;
+
+    while (i <= input.value) {
+        text += `${i} ${r} `
+        i++;
+        r--
     }
     div.innerHTML = text;
 }
