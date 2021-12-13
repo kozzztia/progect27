@@ -714,6 +714,6 @@ const push = document.querySelector('.push');
 // push.onclick = () => {
 //     div.classList.remove('blockActive');
 // }
-div.onclick = function () {
+push.onclick = function () {
     this.classList.toggle('blockActive');
 }
