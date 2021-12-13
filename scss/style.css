@@ -33,23 +33,73 @@ p{
 }
 .blockActive{
     animation-name: hidenBox;
-    animation-duration: 2s;
-    transition : 2s;
-
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    background-color: red;
 }
 @keyframes hidenBox {
     0%{
         top: 0;
         left: 0;
+        background-color: red;
+   
+    }
+    10%{
+        top: 10px;
+        left: 100px;
+        background-color: green;
+        transform: rotate(90deg);
+    }
+    20%{
+        top: 0;
+        left: 200px;
+        background-color: yellow;
+    }
+    30%{
+        top: 10px;
+        left: 100px;
+        background-color: blue;
+    }
+    40%{
+        top: 20px;
+        left: 0px;
+        background-color: orange;
+        transform: rotate(180deg);
+        
     }
     50%{
         top: 10px;
+        left: -100px;
+        background-color: red;
+    }
+    60%{
+        top: 0;
+        left: 0;
+        background-color: green;
+    }
+    70%{
+        top: 10px;
         left: 100px;
+        background-color: yellow;
+    }
+    80%{
+        top: 20px;
+        left: 200px;
+        background-color: orangered;
+        transform: rotate(90deg);
+    }
+    90%{
+        top: 10px;
+        left: 100px;
+        background-color: blue;
     }
     100%{
-        top: 0;
-        left: 200px;
+        top:0;
+        left:0;
+        background-color: red;
     }
 
 }
-
+.border{
+    border: 1px solid green;
+}

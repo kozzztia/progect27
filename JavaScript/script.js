@@ -1,11 +1,11 @@
 // ----------------------------------------unit6
 
 
-let div = document.querySelector('.div');
-let input = document.querySelector('.input');
-let input1 = document.querySelector('.input1');
-let push = document.querySelector('.push');
-let box = document.querySelector('.box');
+// let div = document.querySelector('.div');
+// let input = document.querySelector('.input');
+// let input1 = document.querySelector('.input1');
+// let push = document.querySelector('.push');
+// let box = document.querySelector('.box');
 
 
 // push.addEventListener('click', () => {
@@ -684,15 +684,36 @@ let box = document.querySelector('.box');
 //     div.innerHTML = text;
 // }
 // --------------------------------------------------task15
-push.onclick = () => {
-    let text = '';
-    let i = 0;
-    let r = input.value;
+// push.onclick = () => {
+//     let text = '';
+//     let i = 0;
+//     let r = input.value;
 
-    while (i <= input.value) {
-        text += `${i} ${r} `
-        i++;
-        r--
-    }
-    div.innerHTML = text;
+//     while (i <= input.value) {
+//         text += `${i} ${r} `
+//         i++;
+//         r--
+//     }
+//     div.innerHTML = text;
+// }
+
+// ---------------------------------------------------------------------------------------unit 9 DOM 
+
+const div = document.querySelector('.div');
+const push = document.querySelector('.push');
+
+// div.style.width = '400px';
+// div.style.backgroundColor = 'red';
+// div.style.border = '1px solid green';
+
+// console.log(div.style)
+
+// div.onclick = () => {
+//     div.classList.add('blockActive');
+// }
+// push.onclick = () => {
+//     div.classList.remove('blockActive');
+// }
+div.onclick = function () {
+    this.classList.toggle('blockActive');
 }
