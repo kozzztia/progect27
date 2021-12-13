@@ -699,8 +699,8 @@
 
 // ---------------------------------------------------------------------------------------unit 9 DOM 
 
-const div = document.querySelector('.div');
-const push = document.querySelector('.push');
+// const div = document.querySelector('.div');
+// const push = document.querySelector('.push');
 
 // div.style.width = '400px';
 // div.style.backgroundColor = 'red';
@@ -714,6 +714,21 @@ const push = document.querySelector('.push');
 // push.onclick = () => {
 //     div.classList.remove('blockActive');
 // }
-push.onclick = function () {
-    this.classList.toggle('blockActive');
+// push.onclick = function () {
+//     this.classList.toggle('blockActive');
+// }
+
+// let one = div.getAttribute('data');
+
+// div.innerHTML = one + one;
+let div = document.querySelector('.div')
+let input = document.querySelector('.input');
+let push = document.querySelectorAll('.push')
+
+for (let i = 0; i < push.length; i++) {
+    push[i].onclick = function () {
+        let inputNum = +input.value;
+        let multiply = +this.getAttribute('data-num');
+        div.innerHTML = inputNum * multiply;
+    }
 }
