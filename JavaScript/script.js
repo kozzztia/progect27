@@ -844,6 +844,8 @@ push.onclick = function () {
         body.append(num);
         num.onclick = function () {
             num.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+            num.style.fontSize = `${task7(10, 30)}px`;
+            num.style.width = `${task7(80, 300)}px`;
             div.appendChild(this);
         }
     }
