@@ -697,7 +697,7 @@
 //     div.innerHTML = text;
 // }
 
-// ---------------------------------------------------------------------------------------unit 9 DOM 
+// ---------------------------------------------------------------------------------------unit 9 DOM
 
 // const div = document.querySelector('.div');
 // const push = document.querySelector('.push');
@@ -721,14 +721,130 @@
 // let one = div.getAttribute('data');
 
 // div.innerHTML = one + one;
-let div = document.querySelector('.div')
-let input = document.querySelector('.input');
-let push = document.querySelectorAll('.push')
+// let div = document.querySelector('.div')
+// let input = document.querySelector('.input');
+// let push = document.querySelectorAll('.push')
 
-for (let i = 0; i < push.length; i++) {
-    push[i].onclick = function () {
-        let inputNum = +input.value;
-        let multiply = +this.getAttribute('data-num');
-        div.innerHTML = inputNum * multiply;
+// for (let i = 0; i < push.length; i++) {
+//     push[i].onclick = function () {
+//         let inputNum = +input.value;
+//         let multiply = +this.getAttribute('data-num');
+//         div.innerHTML = inputNum * multiply;
+//     }
+// }
+// ----------------------------------------------------------task1
+
+let push = document.querySelector('.push');
+let input = document.querySelector('.input');
+let div = document.querySelector('.div');
+let body = document.querySelector('body');
+
+// push.onclick = function () {
+//     let num = +input.value;
+//     div.style.height = `${num / 2}px`;
+//     div.style.width = `${num}px`;
+
+//     console.log(div.style.height + div.style.width);
+// }
+// --------------------------------------------------------task2
+// push.onclick = function () {
+//     div.classList.add('blockActive');
+// }
+// ---------------------------------------------------------task3
+
+// div.onclick = function () {
+//     div.classList.remove('blockActive');
+// }
+// ---------------------------------------------------------task4
+
+// push.onclick = function () {
+//     div.classList.toggle('blockActive');
+// }
+// ----------------------------------------------------------task5
+
+// push.onclick = function () {
+//     if (input.className == 'input') {
+//         div.innerHTML = true;
+//     } else {
+//         div.innerHTML = false;
+//     }
+// }
+
+// -------------------------------------------------------task6
+
+// push.onclick = function () {
+//     let numP = document.querySelectorAll('.p')
+//     div.innerHTML = numP.length;
+// }
+
+// --------------------------------------------------------task7
+
+// push.onclick = function () {
+//     let numP = document.querySelectorAll('.p');
+//     for (i = 0; i < numP.length; i++) {
+//         numP[i].classList.add('blockActive')
+//     }
+// }
+// ---------------------------------------------------------task8
+
+// push.onclick = function () {
+//     let numP = document.querySelectorAll('.p');
+//     i = 0;
+//     while (i < numP.length) {
+//         numP[i].classList.toggle('blockActive');
+//         i++;
+//     }
+// }
+
+// -------------------------------------------------------task9
+
+// push.onclick = function () {
+//     let el = document.querySelectorAll('.p');
+//     for (let i = 0; i < el.length; i++) {
+//         el[i].onclick = function () {
+//             this.classList.toggle('blockActive');
+//         }
+//     }
+// }
+
+// -----------------------------------------------------task10
+
+
+// push.onclick = function () {
+//     let el = document.querySelectorAll('.p');
+//     for (let i = 0; i < el.length; i++) {
+//         el[i].onclick = function () {
+//             this.classList.add('blockActive')
+//         }
+//     }
+// }
+
+// ----------------------------------------------------task11
+// function task7(min, max) {
+//     return min + Math.random() * (max - min);
+// }
+// push.onclick = function () {
+//     for (let i = 0; i < input.value; i++) {
+//         let num = document.createElement('p');
+//         num.innerHTML = `object № - ${i}`;
+//         num.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+//         div.appendChild(num);
+//     }
+// }
+
+// --------------------------------------------------task12
+function task7(min, max) {
+    return min + Math.random() * (max - min);
+}
+push.onclick = function () {
+    for (let i = 0; i < input.value; i++) {
+        let num = document.createElement('p');
+        num.innerHTML = 'push me!!!';
+        num.style.cursor = 'pointer';
+        body.append(num);
+        num.onclick = function () {
+            num.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+            div.appendChild(this);
+        }
     }
 }
