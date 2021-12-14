@@ -833,20 +833,49 @@ let body = document.querySelector('body');
 // }
 
 // --------------------------------------------------task12
-function task7(min, max) {
-    return min + Math.random() * (max - min);
-}
+// function task7(min, max) {
+//     return min + Math.random() * (max - min);
+// }
+// push.onclick = function () {
+//     for (let i = 0; i < input.value; i++) {
+//         let num = document.createElement('p');
+//         num.innerHTML = 'push me!!!';
+//         num.style.cursor = 'pointer';
+//         body.append(num);
+//         num.onclick = function () {
+//             this.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
+//             this.style.fontSize = `${task7(10, 30)}px`;
+//             this.style.width = `${task7(80, 300)}px`;
+//             div.appendChild(this);
+//         }
+//     }
+// }
+// ---------------------------------------------------task14
+
+// push.onclick = function () {
+//     for (let i = 0; i < input.value; i++) {
+//         let num = document.createElement('p');
+//         num.innerHTML = 'push me!!!';
+//         num.style.cursor = 'pointer';
+//         div.prepend(num);
+//     }
+// }
+// --------------------------------------------------------task15
+// push.onclick = function () {
+//     for (let i = 0; i < input.value; i++) {
+//         let num = document.createElement('div');
+//         num.innerHTML = 'push me!!!';
+//         num.style.cursor = 'pointer';
+//         div.before(num);
+//     }
+// }
+// ----------------------------------------------------------------16
+
 push.onclick = function () {
     for (let i = 0; i < input.value; i++) {
-        let num = document.createElement('p');
-        num.innerHTML = 'push me!!!';
-        num.style.cursor = 'pointer';
-        body.append(num);
-        num.onclick = function () {
-            num.style.backgroundColor = `rgba(${task7(0, 255)},${task7(0, 255)},${task7(0, 255)},${task7(0, 1)})`;
-            num.style.fontSize = `${task7(10, 30)}px`;
-            num.style.width = `${task7(80, 300)}px`;
-            div.appendChild(this);
-        }
+        let num = document.createElement('div');
+        num.innerHTML = "hello" + i;
+        num.classList.add('border');
+        div.after(num);
     }
 }
