@@ -3,8 +3,9 @@ input{
     border: 1px solid #762311;
 }
 h2,h3,h4,h5,h6,h1{
-    color: red;
+    color: rgb(10, 46, 12);
     text-align: center;
+    font-weight: bold;
 }
 div{
     margin: 0 auto;
@@ -27,7 +28,7 @@ p{
 .block{
     display: block;
     position: relative;
-    left: 100px;
+    left: 0px;
 
 
 }

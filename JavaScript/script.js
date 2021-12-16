@@ -911,11 +911,39 @@ let body = document.querySelector('body');
 
 // ------------------------------------------------------------------task 20
 
-push.onclick = function (i) {
-    let p = document.querySelectorAll('.p');
-    let text = input.value;
-    for (i = 0; i < p.length; i++) {
-        p[i].setAttribute('data-' + text, `${i}`);
-        p[i].setAttribute('title', `${text + i}`);
-    }
+// push.onclick = function (i) {
+//     let p = document.querySelectorAll('.p');
+//     let text = input.value;
+//     for (i = 0; i < p.length; i++) {
+//         p[i].setAttribute('data-' + text, `${i}`);
+//         p[i].setAttribute('title', `${text + i}`);
+//     }
+// }
+
+// ------------------------------------------------------------------------- unit 10 array
+
+
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 1, 3, 4, 5];
+
+// for (let i = 0; i < a.length; i++)  console.log(a[i]);
+
+// push.onclick = () => { for (let i = 0; i < a.length; i++)  console.log(a[i]) }
+
+// let t = a[0];
+// a[0] = a[8];
+// a[8] = t;
+// for (let i = 0; i < a.length; i++)  console.log(a[i]);
+
+//-------------------------------------------------------------------------------------посик большего числа
+// push.onclick = (i) => {
+//     let t = 0;
+//     for (i = 0; i < a.length; i++) if (i > t) t = a[i];
+//     console.log(t);
+// }
+
+// ------------------------------------------------------------------------------------выполнение мат+\- операции
+push.onclick = (i) => {
+    let t = 0;
+    for (i = 0; i < a.length; i++) t = t + a[i];
+    div.innerHTML = t;
 }
