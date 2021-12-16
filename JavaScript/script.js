@@ -942,8 +942,36 @@ let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 1, 3, 4, 5];
 // }
 
 // ------------------------------------------------------------------------------------выполнение мат+\- операции
-push.onclick = (i) => {
-    let t = 0;
-    for (i = 0; i < a.length; i++) t = t + a[i];
-    div.innerHTML = t;
+// push.onclick = (i) => {
+//     let t = 0;
+//     for (i = 0; i < a.length; i++) t = t + a[i];
+//     div.innerHTML = t;
+// }
+// --------------------------------------------------------------------------------------task1
+
+// const array = ['a', a, 22, -22, 2.2, true];
+
+// push.onclick = (i) => {
+//     for (i = 0; i < array.length; i++) console.log(array[i]);
+// }
+// console.log(array);
+
+// -----------------------------------------------------------------------------------------task2
+
+// const array = ['a', 22, -22, 2.2, true];
+// div.innerHTML = array;
+// ----------------------------------------------------------------------------------------task3 if (Number.isInteger(array[i])) testing for a number
+const array = ['a', a, 22, -22, 2.2, true, 2, 5, 11, 6, 6, 7, 8];
+
+// console.log(array.length);
+
+// div.innerHTML = array[0] + ' ' + array[5];
+
+push.onclick = function (i) {
+    let sum = 0;
+    for (i = 0; i < array.length; i++)
+        if (Number.isInteger(array[i])) {
+            sum = sum + array[i]
+        } else { console.log(array[i]); continue; }
+    div.innerHTML = 'sum=' + sum;
 }
