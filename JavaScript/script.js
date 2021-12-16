@@ -871,11 +871,21 @@ let body = document.querySelector('body');
 // }
 // ----------------------------------------------------------------16
 
-push.onclick = function () {
-    for (let i = 0; i < input.value; i++) {
-        let num = document.createElement('div');
-        num.innerHTML = "hello" + i;
-        num.classList.add('border');
-        div.after(num);
-    }
+// push.onclick = function () {
+//     for (let i = 0; i < input.value; i++) {
+//         let num = document.createElement('div');
+//         num.innerHTML = "hello" + i;
+//         num.classList.add('border');
+//         div.after(num);
+//     }
+// }
+
+// --------------------------------------------------------------------17
+
+push.onclick = function (text) {
+    text = input.value;
+    let element = document.createElement('div');
+    element.classList.add('border');
+    element.textContent = text;
+    div.replaceWith(element);
 }
