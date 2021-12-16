@@ -961,17 +961,172 @@ let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 1, 3, 4, 5];
 // const array = ['a', 22, -22, 2.2, true];
 // div.innerHTML = array;
 // ----------------------------------------------------------------------------------------task3 if (Number.isInteger(array[i])) testing for a number
-const array = ['a', a, 22, -22, 2.2, true, 2, 5, 11, 6, 6, 7, 8];
+// const array = ['a', a, 22, -22, 2.2, true, 2, 5, 11, 6, 6, 7, 8];
 
 // console.log(array.length);
 
 // div.innerHTML = array[0] + ' ' + array[5];
 
-push.onclick = function (i) {
-    let sum = 0;
-    for (i = 0; i < array.length; i++)
-        if (Number.isInteger(array[i])) {
-            sum = sum + array[i]
-        } else { console.log(array[i]); continue; }
-    div.innerHTML = 'sum=' + sum;
+// push.onclick = function (i) {
+//     let sum = 0;
+//     for (i = 0; i < array.length; i++)
+//         if (Number.isInteger(array[i])) {
+//             sum = sum + array[i]
+//         } else { console.log(array[i]); continue; }
+//     div.innerHTML = 'sum=' + sum;
+// }
+// const mass = ['Kostia', 'scorpion', 19, 11]
+// push.addEventListener('click', () => {
+//     let sum = ""
+//     for (i = 0; i < mass.length; i++)
+//         if (Number.isInteger(mass[i])) {
+//             sum += mass[i] + ":";
+//         } else {
+//             sum += mass[i] + " ";
+//         }
+//     div.innerHTML = sum + "87";
+// })
+
+// const array = []
+
+// array[7] = 'vietnam';
+// array[6] = 'turkey';
+// array[5] = 'italy';
+
+// console.log(array.length);
+// div.innerHTML = array[array.length - 1];
+
+// array = [2, 3, 4, 5, 6, 7];
+
+// push.onclick = function () {
+//     let p = document.querySelectorAll('.p');
+//     let textP = ""
+//     for (j = 0; j < p.length; j++) textP += p[j].getAttribute('data');
+
+//     // -----------------------
+//     let text = "";
+//     let r = array[0];
+//     array[0] = array[5];
+//     array[5] = r;
+//     for (let i = 0; i < array.length; i++) text += array[i] + " ";
+
+//     div.innerHTML = text + '<br>';
+//     div.innerHTML += textP;
+// }
+
+// ----------------------------------------task12
+
+// ar12 = ['test', 'west', 'list', 'class', 'best'];
+
+// push.onclick = (i) => {
+//     i = ar12[0];
+//     ar12[0] = ar12[ar12.length - 1];
+//     ar12[ar12.length - 1] = i;
+
+//     div.innerHTML = ar12[ar12.length - 1] + " " + ar12[0];
+// }
+
+// -----------------------------------------task13
+
+// ar13 = ['test', 'west', 'list', 'class', 'best'];
+// let text = "";
+
+// push.onclick = (i) => {
+//     for (let i = 0; i < ar13.length; i++) {
+//         text += i + " " + ar13[i] + ", ";
+//     }
+//     div.textContent = text;
+// }
+
+// -------------------------------------------task 14
+
+// ar14 = [1, 2, 3, 'hello', 66];
+
+// push.onclick = (i) => {
+//     let text = "";
+//     for (i = ar14.length - 1; i >= 0.; i--) {
+//         text += ar14[i] + ' ';
+//     }
+//     div.innerHTML = text;
+// }
+
+// --------------------------------------------task15
+
+// ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+
+// push.onclick = (i) => {
+//     let text = "";
+//     for (i = 0; i < ar15.length; i++) {
+//         if (ar15[i] < 0) text += ar15[i] + ' ';
+//         else continue;
+//     }
+//     div.innerHTML = text;
+// }
+
+// --------------------------------------------task 16;
+
+// ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+// ar16_odd = [];
+// ar16_even = [];
+
+// push.onclick = (i) => {
+//     let p = 0;
+//     let z = 0;
+//     for (i = 0; i < ar16.length; i++) {
+//         if (ar16[i] % 2 === 0) {
+//             ar16_odd[p] = ar16[i];
+//             p++;
+//         } else {
+//             ar16_even[z] = ar16[i];
+//             z++;
+//         }
+//     }
+//     document.querySelector('h1').innerHTML = ar16_odd;
+//     document.querySelector('h2').innerHTML = ar16_even;
+// }
+
+// ------------------------------------------task17
+
+// let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
+
+// push.onclick = (i) => {
+//     let bigNum = 0;
+//     for (i = 0; i < ar17.length; i++) if (ar17[i] > 3) bigNum++;
+//     div.innerHTML = bigNum;
+// }
+
+// ----------------------------------------------task18
+
+// let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
+
+// push.onclick = (p) => {
+//     p = 0;
+//     z = 0;
+//     for (i = 0; i < ar18.length; i++) if (p < ar18[i]) p = ar18[i]
+//     div.innerHTML = p;
+// }
+
+// --------------------------------------------task19 -----------------------------------------------------index of bogest number
+
+// ar19 = [15, 313, 666, 78, 241, 4, 45, 424, 67]
+
+// push.onclick = (i) => {
+//     let index = 0;
+//     let big = 0;
+
+//     for (i = 0; i < ar19.length; i++) if (big < ar19[i]) {
+//         big = ar19[i];
+//         index = i;
+//     }
+//     console.log(index);
+// }
+
+// -------------------------------------------task20
+
+ar20 = [4, 5, 6, 7, 8, 9, 10];
+
+push.onclick = (sum, i) => {
+    sum = 0;
+    for (i = 0; i < ar20.length; i++) sum = sum + ar20[i];
+    input.value = sum;
 }
