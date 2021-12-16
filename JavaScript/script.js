@@ -882,10 +882,40 @@ let body = document.querySelector('body');
 
 // --------------------------------------------------------------------17
 
-push.onclick = function (text) {
-    text = input.value;
-    let element = document.createElement('div');
-    element.classList.add('border');
-    element.textContent = text;
-    div.replaceWith(element);
+// push.onclick = function (text) {
+//     text = input.value;
+//     let element = document.createElement('div');
+//     element.classList.add('border');
+//     element.textContent = text;
+//     div.replaceWith(element);
+// }
+
+// --------------------------------------------------------------------task18
+
+// push.onclick = () => {
+//     let p = document.querySelector('.p');
+//     input.value = p.getAttribute('data-num');
+//     div.innerHTML += `attr = ${p.getAttribute('data-num')}`
+// }
+
+// ------------------------------------------------------------------task19
+
+// push.onclick = (i) => {
+//     let text = "";
+//     let p = document.querySelectorAll('.p');
+//     for (i = 0; i < p.length; i++) {
+//         text += p[i].getAttribute('data-num') + " ";
+//     }
+//     div.innerHTML += `<h2>${text}<h2>`
+// }
+
+// ------------------------------------------------------------------task 20
+
+push.onclick = function (i) {
+    let p = document.querySelectorAll('.p');
+    let text = input.value;
+    for (i = 0; i < p.length; i++) {
+        p[i].setAttribute('data-' + text, `${i}`);
+        p[i].setAttribute('title', `${text + i}`);
+    }
 }
