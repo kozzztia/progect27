@@ -923,7 +923,7 @@ let body = document.querySelector('body');
 // ------------------------------------------------------------------------- unit 10 array
 
 
-let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 1, 3, 4, 5];
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 1, 3, 4, 5];
 
 // for (let i = 0; i < a.length; i++)  console.log(a[i]);
 
@@ -1123,10 +1123,205 @@ let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 1, 3, 4, 5];
 
 // -------------------------------------------task20
 
-ar20 = [4, 5, 6, 7, 8, 9, 10];
+// ar20 = [4, 5, 6, 7, 8, 9, 10];
 
-push.onclick = (sum, i) => {
-    sum = 0;
-    for (i = 0; i < ar20.length; i++) sum = sum + ar20[i];
-    input.value = sum;
+// push.onclick = (sum, i) => {
+//     sum = 0;
+//     for (i = 0; i < ar20.length; i++) sum = sum + ar20[i];
+//     input.value = sum;
+// }
+
+// --------------------------------------------------------------------------------------unit 11 array nethods
+
+// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const b = ['a', 'b', 'c', 'd', 'e'];
+
+// // console.log(a.length)
+// a.push(10, 11, 12);
+
+// // console.log(a.length)
+
+// // console.log(a)
+// console.log(a)
+// console.log(a.pop());
+// delete a[2];
+// a.splice(2, 2, 'hi', 'hello');
+// console.log(a)
+
+
+// console.log(a)
+
+
+
+// --------------------------------------------task1
+
+
+let array1 = [33, 'best', 66, 'best', 22, 33, 55, 55];
+
+// const clear = (data) => {
+//     return data.trim();
+// }
+// const find = (num) => {
+//     num = input.value;
+//     input.value = "";
+//     if (num == "") {
+//         input.setAttribute("placeholder", "you need insert a number or string");
+//         return input.value = "";
+//     }
+//     return array.push(clear(num));
+// }
+
+// const show = (elem) => {
+//     div.innerHTML = elem + '<br>' + elem.length;
+
+// }
+// push.onclick = (elem) => {
+//     find();
+//     show();
+// }
+
+// ---------------------------------------------task2
+// const popIt = () => {
+//     return array.pop();
+// }
+// push.onclick = () => {
+//     popIt()
+//     show();
+// }
+
+// ----------------------------------------------task3
+
+// const shiftIt = (elem) => {
+//     return elem.shift();
+// }
+// push.onclick = () => {
+//     shiftIt(array2);
+//     show(array2);
+// }
+
+// ---------------------------------------------------task4
+
+
+// const pushIt = (elem) => {
+//     return elem.push(+input.value);
+// }
+// push.onclick = (array2) => {
+//     pushIt(array);
+//     show(array);
+// }
+
+// -----------------------------------------------------task5
+
+// const unshiftIt = (elem) => {
+//     return elem.unshift(input.value)
+// }
+// push.onclick = () => {
+//     unshiftIt(array1);
+//     show(array1);
+// }
+
+// ---------------------------------------------------------task6
+// let plus = (elem) => {
+//     let num = +input.value;
+//     return elem[elem.length] = num;
+// }
+
+// push.onclick = () => {
+//     plus(array);
+//     show(array);
+//     input.value = "";
+// }
+
+// -----------------------------------------------------task7
+// a = ['china', 'india', 'brazil', 'japan', 'egypt'];
+
+// push.onclick = (i) => {
+//     let b = [];
+//     let p = 0;
+
+//     for (i = 0; i < a.length - 1; i++) {
+//         b[p] = a[i];
+//         p++;
+//     }
+//     a = b;
+//     div.innerHTML = a;
+//     return a
+// }
+
+// -----------------------------------------------------task8
+// let a = [33, 'best', 66, 'best'];
+
+// push.onclick = (i) => {
+//     let b = []
+//     let p = 0;
+//     for (i = 0; i < a.length - 1; i++) {
+//         p++;
+//         b[i] = a[p];
+//     }
+//     a = b;
+//     div.innerHTML = a
+//     return a
+// }
+
+// ----------------------------------------------------task9
+// let a = [33, 'best', 66, 'best'];
+
+// push.onclick = function () {
+//     let b = [];
+//     b[0] = +input.value;
+//     let p = 0;
+//     for (let i = 0; i < a.length; i++) {
+//         p++;
+//         b[p] = a[i];
+//     }
+//     a = b;
+//     div.innerHTML = a;
+//     input.value = "";
+//     return a;
+// }
+
+// ------------------------------------------------task10
+
+// a = [3, 14, 15, 92, 6];
+
+// push.onclick = function () {
+//     let b = [];
+//     let p = a.length - 1;
+//     for (i = 0; i < a.length; i++) {
+//         b[p] = +a[i];
+//         p--;
+//     }
+//     a = b
+//     div.innerHTML = a;
+//     return a
+// }
+
+// ------------------------------------------------task11
+
+// a = [2, 3, 4, 5, 6, 7];
+
+// push.onclick = function () {
+//     let num = +input.value;
+//     let result = a.indexOf(num);
+//     console.log(num, result);
+// }
+
+// ----------------------------------------------------task12
+
+let a = [6, 62, 60, 70, 1, 5]
+
+push.onclick = function (num) {
+    num = +input.value;
+
+    for (let i = 0; i < a.length; i++) {
+        // a[i] == num ? div.innerHTML = i : console.log(-1)
+        if (a[i] == num) {
+            div.innerHTML = i;
+            break;
+        }
+        else {
+            div.innerHTML = -1
+        }
+    }
 }
+
