@@ -1156,7 +1156,7 @@ let body = document.querySelector('body');
 // --------------------------------------------task1
 
 
-let array1 = [33, 'best', 66, 'best', 22, 33, 55, 55];
+// let array1 = [33, 'best', 66, 'best', 22, 33, 55, 55];
 
 // const clear = (data) => {
 //     return data.trim();
@@ -1308,20 +1308,130 @@ let array1 = [33, 'best', 66, 'best', 22, 33, 55, 55];
 
 // ----------------------------------------------------task12
 
-let a = [6, 62, 60, 70, 1, 5]
+// let a = [6, 62, 6, 60, 70, 1, 5]
 
-push.onclick = function (num) {
-    num = +input.value;
+// push.onclick = function (num) {
+//     div.innerHTML = ' ';
+//     num = +input.value;
+//     for (let i = 0; i < a.length; i++) {
+//         a[i] == num ? div.innerHTML += i + ' , ' : console.log(-1)
+//         // if (a[i] == num) {
+//         //     div.innerHTML = i;
+//         //     break;
+//         // }
+//         // else {
+//         //     div.innerHTML = -1
+//         // }
+//     }
+// }
 
-    for (let i = 0; i < a.length; i++) {
-        // a[i] == num ? div.innerHTML = i : console.log(-1)
-        if (a[i] == num) {
-            div.innerHTML = i;
-            break;
-        }
-        else {
-            div.innerHTML = -1
-        }
-    }
+// -----------------------------------------------------task13
+
+// let a = [6, 0, 22, 1, 4, 76]
+
+// push.onclick = function () {
+//     let b = [];
+//     let p = a.length - 1;
+
+//     for (i = 0; i < a.length; i++) {
+//         b[p] = a[i];
+//         p--;
+//     }
+//     a = b;
+//     div.innerHTML = a;
+//     return a
+// }
+
+// --------------------------------------------------------task14
+// onclick = function (num) {
+//     num = +input.value;
+//     let a = [];
+//     for (i = 0; i < num; i++) {
+//         a[i] = i + 1;
+//     }
+//     div.innerHTML = a
+// -------------------------------------------------------task15
+
+// let a = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+
+// push.onclick = function () {
+//     let num = +input.value;
+//     p = 0;
+//     for (i = 0; i < a.length; i++) {
+//         if (a[i] != num) {
+//             p++;
+//             if (p === a.length) {
+//                 a[a.length] = num;
+//             }
+//         }
+//     }
+//     input.value = '';
+//     div.innerHTML = a
+//     return a
+// }
+
+// ---------------------------------------------------------task16
+
+// let a = [];
+// let b = [5, 6, 7, 8, 9];
+// let c = [23, 24, 56, 87];
+
+
+// push.onclick = function () {
+//     a = b.concat(c)
+//     console.log(a)
+// }
+
+// ---------------------------------------------------task17
+
+
+// let a = ['a', 'b', 'c', 'd'];
+// let b = [1, 2, 3, 4, 5, 'war'];
+// let c = [];
+
+// push.onclick = function () {
+//     let p = 0;
+//     let sum = a.length + b.length;
+//     for (let i = 0; i < sum; i++) {
+//         c[i] = a[i];
+//         if (i >= a.length) {
+//             c[i] = b[p];
+//             p++;
+//         }
+//     }
+//     div.innerHTML = c
+//     return c
+// }
+
+// -----------------------------------------------------task18
+
+// let a = ['b', 'c', '45', 'e', 'z', 'y'];
+
+// push.onclick = function () {
+//     let num = input.value;
+//     div.innerHTML = a.includes(num);
+// }
+
+// --------------------------------------------------------task19
+
+// let a = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every', 'chjsbjcbscjasckjasckjnascjnajcnasjkcn'];
+
+// push.onclick = function (i) {
+//     let p = 0;
+//     for (i = 0; i < a.length; i++) {
+//         if (a[i].length > p) {
+//             p = a[i].length;
+//             index = i;
+//         }
+//     }
+//     div.innerHTML = a[index] + ' ' + p + '-букв';
+// }
+
+// -------------------------------------------------------task20
+
+let a = [4, 5, 6, 7, 8, 9, 10]
+
+push.onclick = () => {
+    let x = a.join('');
+    console.log(x)
 }
-
