@@ -10,12 +10,12 @@ let body = document.querySelector('body');
 let a = [1, 2, 3, 4, 5, 6];
 
 let b = [
-    [1, -2, 3, 4, 5, 6, 4, 4, -5, -6, 7, 'war'],
-    [7, 8, 9, 10, 'war', 11, -12],
-    [13, 'war', 14, -15, 16, 17, 18],
-    [19, -20, 21, -22, -23, 'war', 24],
-    [25, 26, -27, 28, 29, 30],
-    [31, -32, 'war', 33, -34, 35, -36],
+    [1, -2, 3, 4, 5, 6, 4, 4, -5, -6, 7, 'china'],
+    [7, 8, 9, 10, 'jamaika', 11, -12, 'pop'],
+    [13, 'argentina', 14, -15, 16, 'i', 'e1', 7, 18],
+    [19, -20, 21, -22, -23, 'island', 24],
+    [25, -27, 28, 29, 30],
+    [31, -32, 'guineia', 33, -34, -36],
 ];
 // for (let i = 0; i < b.length; i++) {
 //     // console.log(b[i]);
@@ -108,16 +108,76 @@ let b = [
 //     div.innerHTML = `${test} `;
 // }
 
-push.onclick = (i, p) => {
-    p = 0;
-    let test = [];
-    for (i = 0; i < b.length; i++) {
-        for (r = 0; r < b[i].length; r++) {
-            if (Number.isInteger(b[i][r]));
-            else test[p] = b[i][r], p++;
-        }
-    }
-    console.log(test.length)
-    div.innerHTML = test;
-}
+// push.onclick = (i, p) => {
+//     p = 0;
+//     let test = [];
+//     for (i = 0; i < b.length; i++) {
+//         for (r = 0; r < b[i].length; r++) {
+//             if (Number.isInteger(b[i][r]));
+//             else test[p] = b[i][r], p++;
+//         }
+//     }
+//     console.log(test.length)
+//     div.innerHTML = test;
+// }
 // --------------------------------------------------t11
+
+// push.onclick = (i) => {
+//     for (i = b.length - 1; i >= 0; i--)
+//         for (k = b[i].length - 1; k >= 0; k--)
+//             console.log(b[i][k]);
+// }
+
+// push.onclick = () => {
+//     let p = 0;
+//     let test = [];
+//     for (let i = 0; i < b.length; i++) {
+//         for (let k = 0; k < b[i].length; k = k + 3) {
+//             test[p] = b[i][k];
+//             p++;
+//         }
+//     }
+//     console.log(b)
+//     div.innerHTML = test.join(',');
+// }
+
+// push.onclick = () => {
+//     let num = 5;
+//     let test = [
+//         [],
+//         [],
+//         [],
+//         [],
+//         [],
+//     ];
+//     p = 0;
+//     z = 0;
+//     for (let i = 0; i < num; i++) {
+//         for (let j = 0; j < num; j++) {
+//             if (z % 2 == 0) {
+//                 test[i][j] = " ";
+//                 z++;
+//             } else {
+//                 test[i][j] = "█";
+//                 z++;
+//             }
+//         }
+
+//     }
+//     console.log(test)
+// }
+
+// push.onclick = () => {
+//     for (let i = 0; i < b.length; i++) {
+//         console.log(b[i].length)
+//     }
+// }
+
+// push.onclick = () => {
+//     let max = 0;
+//     for (let i = 0; i < b.length; i++) {
+//         if (b[i].length > max) max = b[i].length;
+//     }
+//     div.innerHTML = max;
+// }
+
