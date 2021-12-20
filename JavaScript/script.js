@@ -1,7 +1,8 @@
 
 let push = document.querySelector('.push');
-let input = document.querySelector('.input');
-// let div = document.querySelector('.div');
+let inputText = document.querySelector('.inputText');
+// let inputNumber = document.querySelector('.inputNumber');
+let div = document.querySelector('.div');
 let body = document.querySelector('body');
 
 // -------------------------------------------------------------------------------unit 13  асоциантивные массивы
@@ -50,7 +51,10 @@ let body = document.querySelector('body');
 let a = {
     "one": "hello",
     "two": "mahai",
-    "five": "hi"
+    "three": "hiho",
+    "four": "ziga",
+    "five": "aloha",
+    "six": "ola",
 };
 
 
@@ -92,14 +96,68 @@ let a = {
 // }
 // -------------------------------------------------task5
 
-let out = function (param, block) {
-    let div = document.querySelector(block);
+// let out = function (param, block) {
+//     let div = document.querySelector(block);
+//     let text = "";
+//     for (let key in param) {
+//         text += param[key] + " " + '<br>';
+//     }
+//     div.innerHTML = text;
+// }
+// push.onclick = function () {
+//     out(a, 'div')
+// };
+
+// ---------------------------------------------------task6
+
+// push.onclick = function () {
+//     let text = inputText.value;
+//     number = inputNumber.value;
+//     let textOut = '';
+
+//     a[number] = text;
+//     for (let key in a) {
+//         textOut += a[key] + " " + '<br>';
+//     }
+//     div.innerHTML = textOut;
+//     // return a
+// }
+
+// --------------------------------------------------task7
+
+// push.onclick = () => {
+
+//     let text = '';
+//     for (let key in a) {
+//         if (key === inputText.value) {
+//             console.log(a[key]);
+//             text += key;
+//         } else {
+
+//         }
+//     }
+//     div.innerHTML = text;
+// }
+
+// -----------------------------------------------------task8      Object.keys(a).length   длинна асоциативного масива!!!!!!
+
+push.onclick = () => {
     let text = "";
-    for (let key in param) {
-        text += param[key] + " " + '<br>';
+    let p = 0;
+    for (let key in a) {
+        if (key === inputText.value) {
+            console.log(key);
+            text += a[key];
+        } else {
+            p++;
+            if (p == Object.keys(a).length) {
+                x = prompt('введите значение')
+                a[inputText.value] = x;
+            }
+        }
     }
     div.innerHTML = text;
+    inputText.innteHTML = '';
+    console.log(a)
+    return a;
 }
-push.onclick = function () {
-    out(a, 'div')
-};
