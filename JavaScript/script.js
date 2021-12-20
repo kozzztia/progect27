@@ -51,8 +51,8 @@ let body = document.querySelector('body');
 let a = {
     "one": "hello",
     "two": "mahai",
-    "three": "hiho",
-    "four": "ziga",
+    "three": "hello",
+    "four": "hello",
     "five": "aloha",
     "six": "ola",
 };
@@ -139,25 +139,72 @@ let a = {
 //     div.innerHTML = text;
 // }
 
-// -----------------------------------------------------task8      Object.keys(a).length   длинна асоциативного масива!!!!!!
+// -----------------------------------------------------task8      Object.keys(array).length   длинна асоциативного масива!!!!!!
 
-push.onclick = () => {
-    let text = "";
-    let p = 0;
-    for (let key in a) {
-        if (key === inputText.value) {
-            console.log(key);
-            text += a[key];
-        } else {
-            p++;
-            if (p == Object.keys(a).length) {
-                x = prompt('введите значение')
-                a[inputText.value] = x;
-            }
-        }
-    }
-    div.innerHTML = text;
-    inputText.innteHTML = '';
-    console.log(a)
-    return a;
-}
+// push.onclick = () => {
+//     let text = "";
+//     let p = 0;
+//     for (let key in a) {
+//         if (key === inputText.value) {
+//             console.log(key);
+//             text += a[key];
+//         } else {
+//             p++;
+//             if (p == Object.keys(a).length) {
+//                 x = prompt('введите значение')
+//                 a[inputText.value] = x;
+//             }
+//         }
+//     }
+//     div.innerHTML = text;
+//     inputText.innteHTML = '';
+//     console.log(a)
+//     return a;
+// }
+
+// -----------------------------------------------------task 9
+
+
+// push.onclick = () => {
+//     let text = '';
+//     let p = 0;
+
+//     for (let key in a) {
+//         if (a[key] === inputText.value) {
+//             text += key + ' ';
+//         } else {
+//             p++;
+//             if (p === Object.keys(a).length) {
+//                 text = 'none';
+//             }
+//         }
+//     }
+//     div.innerHTML = text;
+// }
+
+
+// -----------------------------------------------------task10
+
+
+// let test = function (array, type) {
+//     let text = '';
+//     let p = 0;
+//     type = inputText.value;
+//     for (let key in array) {
+//         if (array[key] === type) {
+//             text = true;
+//             break;
+//         } else {
+//             p++;
+//             if (p === Object.keys(array).length) {
+//                 text = false;
+//             }
+//         }
+//     }
+//     div.innerHTML = text;
+// }
+
+// push.onclick = function () {
+
+//     test(a, inputText.value)
+// }
