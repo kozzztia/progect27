@@ -329,7 +329,14 @@ let a = {
 //     }
 //     div.innerHTML = z;
 // }
+// ---------------------------------------------------------------------------------------------------------------------------------------------------array!!!!
+// let b = {
+//     one: { 'two': 2, 'one1': 11, 'tree': 3, 'four': 4, 'five': 5, 'six': 6 },
+//     two: { 'one2': 21, 'two': 2, 'tree': 3, 'four': 4, 'five': 5, 'two': 2, 'six': 6, 'seven': 7 },
+//     three: { 'one3': 31, 'four': 4, 'five': 5, 'six': 6, 'seven': 7 },
+//     four: { 'one4': 41, 'tree': 3, 'four': 4, 'five': 5, 'six': 6, 'two': 2 },
 
+// }
 
 // push.onclick = () => {
 //     let text = '';
@@ -348,22 +355,37 @@ let a = {
 // }
 
 // console.log(b)
-let b = {
-    one: { 'two': 2, 'one1': 11, 'tree': 3, 'four': 4, 'five': 5, 'six': 6 },
-    two: { 'one2': 21, 'two': 2, 'tree': 3, 'four': 4, 'five': 5, 'two': 2, 'six': 6, 'seven': 7 },
-    three: { 'one3': 31, 'four': 4, 'five': 5, 'six': 6, 'seven': 7 },
-    four: { 'one4': 41, 'tree': 3, 'four': 4, 'five': 5, 'six': 6, 'two': 2 },
 
+
+// push.onclick = () => {
+//     num = +inputText.value;
+//     let text = '';
+//     for (let key in b) {
+//         for (let i in b[key]) {
+//             if (b[key][i] === num) text += key + " have a  number " + b[key][i] + " in array" + '<br>';
+//         }
+//     }
+//     div.innerHTML = text;
+// }
+// console.log(b)
+
+let war = {
+    'one': { 'q': 'quit', 'w': 'window', 'e': 'earth' },
+    'two': { 'a': 2, 2: 'six', 6: true },
+    'three': { 'z': 111, 'x': false, 'v': 2 + 2 },
+    'four': { 'p': '+', 'odd': 2, '1': '000' }
 }
 
-push.onclick = () => {
+push.onclick = function (text) {
+    text = '';
     num = +inputText.value;
-    let text = '';
-    for (let key in b) {
-        for (let i in b[key]) {
-            if (b[key][i] === num) text += key + " have a  number " + b[key][i] + " in array" + '<br>';
+    for (let key in war) {
+        console.log(key + '--------------');
+        for (let it in war[key]) {
+            if (war[key][it] == num) text += war[key][it] + ' -position : ' + it + ' ,array :' + key + '<br>';
+            else if (it == num) text += 'find it №-' + it + ' ,with value:' + war[key][it] + '<br>';
+
         }
     }
     div.innerHTML = text;
 }
-console.log(b)
