@@ -48,13 +48,21 @@ let body = document.querySelector('body');
 
 // ---------------------------------------------------------------------task2
 
+// let a = {
+//     "one": "hello",
+//     "two": "mahai",
+//     "three": "hello",
+//     "four": "hello",
+//     "five": "aloha",
+//     "six": "ola",
+// };
 let a = {
-    "one": "hello",
-    "two": "mahai",
-    "three": "hello",
-    "four": "hello",
-    "five": "aloha",
-    "six": "ola",
+    "one": 1,
+    "two": 2,
+    "three": 4,
+    "four": 99,
+    "five": 123,
+    "six": 12,
 };
 
 
@@ -207,4 +215,101 @@ let a = {
 // push.onclick = function () {
 
 //     test(a, inputText.value)
+// }
+
+// --------------------------------------------------------task11
+
+// push.onclick = () => {
+//     let text = '';
+
+//     for (let key in a) {
+//         if (key === inputText.value) {
+//             delete a[key];
+//         } else {
+//             text += key + '=' + a[key] + '<br>';
+//         }
+
+//     }
+//     console.log(a);
+//     div.innerHTML = text;
+//     return a
+// }
+
+// --------------------------------------------------------task12
+
+// push.onclick = () => {
+//     let text = '';
+
+//     for (let key in a) {
+//         if (a[key] === inputText.value) {
+//             delete a[key];
+//         } else {
+//             text += key + '=' + a[key] + '<br>';
+//         }
+
+//     }
+//         console.log(a);
+//     div.innerHTML = text;
+//     return a
+// }
+//
+
+// -------------------------------------------------------------task13
+
+
+// push.onclick = () => {
+//     let sum = 0;
+
+//     for (let key in a) {
+//         sum = sum + a[key];
+//     }
+//     div.innerHTML = `sum of all elements = ${sum}`;
+// }
+
+// -------------------------------------------------------------task14
+
+
+let arr1 = {
+    0: '1null', 1: '1one', 2: '1two', 3: '1three', 4: '1four'
+}
+let arr2 = {
+    0: '2null', 1: '2one', 2: '2two', 3: '2three', 4: '2four'
+}
+let arr3 = {
+    0: '3null', 1: '3one', 2: '3two', 3: '3three', 4: '3four'
+}
+let arr4 = {
+    0: '4null', 1: '4one', 2: '4two', 3: '4three', 4: '4four'
+}
+let arr5 = {
+    0: '5null', 1: '5one', 2: '5two', 3: '5three', 4: '5four'
+}
+
+let arr = {
+    arr1,
+    arr2,
+    arr3,
+    arr4,
+    arr5,
+}
+
+// push.onclick = () => {
+
+//     let p = +inputText.value;
+//     for (let key in arr) {
+//         console.log(arr[key][p]);
+//     }
+// }
+
+// ---------------------------------------------------------task 15
+
+// push.onclick = () => {
+//     let text = "";
+//     p = 0;
+//     for (let key in arr) {
+//         text += arr[key] + ' ';
+//         p++;
+//         text += '<br>'
+//     }
+//     console.log(text);
 // }
