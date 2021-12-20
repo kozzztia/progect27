@@ -269,29 +269,30 @@ let a = {
 // -------------------------------------------------------------task14
 
 
-let arr1 = {
-    0: '1null', 1: '1one', 2: '1two', 3: '1three', 4: '1four'
-}
-let arr2 = {
-    0: '2null', 1: '2one', 2: '2two', 3: '2three', 4: '2four'
-}
-let arr3 = {
-    0: '3null', 1: '3one', 2: '3two', 3: '3three', 4: '3four'
-}
-let arr4 = {
-    0: '4null', 1: '4one', 2: '4two', 3: '4three', 4: '4four'
-}
-let arr5 = {
-    0: '5null', 1: '5one', 2: '5two', 3: '5three', 4: '5four'
-}
+// let arr1 = {
+//     0: '1null', 1: '1one', 2: '1two', 3: '1three', 4: '1four'
+// }
+// let arr2 = {
+//     0: '2null', 1: '2one', 2: '2two', 3: '2three', 4: '2four'
+// }
+// let arr3 = {
+//     0: '3null', 1: '3one', 2: '3two', 3: '3three', 4: '3four'
+// }
+// let arr4 = {
+//     0: '4null', 1: '4one', 2: '4two', 3: '4three', 4: '4four'
+// }
+// let arr5 = {
+//     0: '5null', 1: '5one', 2: '5two', 3: '5three', 4: '5four'
+// }
 
-let arr = {
-    arr1,
-    arr2,
-    arr3,
-    arr4,
-    arr5,
-}
+// let arr = {
+//     arr1,
+//     arr2,
+//     arr3,
+//     arr4,
+//     arr5,
+// }
+
 
 // push.onclick = () => {
 
