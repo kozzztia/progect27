@@ -56,16 +56,29 @@ let body = document.querySelector('body');
 //     "five": "aloha",
 //     "six": "ola",
 // };
+
 let a = {
     "one": 1,
     "two": 2,
-    "three": 4,
+    "three": 'x',
     "four": 99,
     "five": 123,
     "six": 12,
 };
 
+// let b = {
+//     'one': [11, 2, 3, 4, 5, 6, 7],
+//     'two': [21, 2, 3, 4, 5, 6, 7],
+//     'three': [31, 2, 3, 4, 5, 6, 7],
+//     'four': [41, 2, 3, 4, 5, 6, 7],
+// }
+let b = {
+    one: { 'two': 2, 'one1': 11, 'tree': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7 },
+    two: { 'one2': 21, 'two': 2, 'tree': 3, 'four': 4, 'five': 5, 'two': 2, 'six': 6, 'seven': 7 },
+    three: { 'one3': 31, 'tree': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7 },
+    four: { 'one4': 41, 'tree': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'two': 2 },
 
+}
 // push.onclick = (e) => input.value = a.five;
 
 // ---------------------------------------------------------task3
@@ -314,3 +327,30 @@ let a = {
 //     }
 //     console.log(text);
 // }
+
+// push.onclick = () => {
+//     let z = '';
+//     for (let key in a) {
+//         z += a[key] + ' = ' + key + '<br>';
+//     }
+//     div.innerHTML = z;
+// }
+
+
+push.onclick = () => {
+    let text = '';
+    for (let key in b) {
+        // for (i = 0; i < b[key].length; i++) {
+        //     text += b[key][i] + " ";
+        // }
+        for (let i in b[key]) {
+            text += b[key][i] + " ";
+        }
+
+        text += '<br>';
+    }
+    div.innerHTML = text;
+
+}
+
+console.log(b)
