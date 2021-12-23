@@ -11,7 +11,7 @@ div{
     margin: 0 auto;
     border: 1px solid red;
     width: 300px;
-    min-height:200px;
+    height:200px;
     text-align: left;
     padding: 20px;
 }
@@ -103,4 +103,11 @@ p{
 }
 .border{
     border: 3px solid green;
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
 }
